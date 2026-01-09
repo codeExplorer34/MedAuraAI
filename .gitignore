@@ -144,6 +144,8 @@ outputs/
 # ============================================================================
 data/
 datasets/
+cases_data/
+medical_reports/
 *.csv
 *.tsv
 *.xlsx

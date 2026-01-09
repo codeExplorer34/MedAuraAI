@@ -22,7 +22,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY Main.py .
 COPY api_server.py .
 COPY export_cases.py .
-COPY utils/ ./utils/
+COPY Utils/ ./Utils/
 COPY medical_reports/ ./medical_reports/
 COPY cases_data/ ./cases_data/
 COPY results/ ./results/
