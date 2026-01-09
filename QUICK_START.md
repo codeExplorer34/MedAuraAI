@@ -8,17 +8,17 @@ Follow these steps to set up and run the project immediately after cloning.
 
 We use `uv` for fast and reliable Python environment management.
 
-1. **Initialize the virtual environment**:
+1.  **Initialize the virtual environment**:
     ```bash
     uv venv
     ```
-2. **Install all project dependencies**:
+2.  **Install all project dependencies**:
     ```bash
-    uv pip install -r requirements.txt
+    uv pip install -r backend/requirements.txt
     ```
-3. **Activate the virtual environment**:
-    - **Windows**: `.venv\Scripts\activate`
-    - **macOS/Linux**: `source .venv/bin/activate`
+3.  **Activate the virtual environment**:
+    -   **Windows**: `.venv\Scripts\activate`
+    -   **macOS/Linux**: `source .venv/bin/activate`
 
 ---
 
@@ -26,8 +26,8 @@ We use `uv` for fast and reliable Python environment management.
 
 The AI agents require a Google Gemini API Key to function.
 
-1. Create a file named `apikey.env` in the root directory.
-2. Add your key:
+1.  Create a file named `apikey.env` in the root directory.
+2.  Add your key:
     ```env
     GOOGLE_API_KEY=your_gemini_api_key_here
     ```
@@ -38,7 +38,7 @@ The AI agents require a Google Gemini API Key to function.
 
 Instead of starting the backend and frontend separately, use Docker Compose to handle everything with one command.
 
-1. **Build and start the containers**:
+1.  **Build and start the containers**:
     ```bash
     docker-compose up -d --build
     ```
@@ -55,7 +55,16 @@ Once Docker is finished, your app is live at these addresses:
 
 ---
 
-## �️ Project Maintenance
+## 📋 Project Structure
+
+-   `backend/`: FastAPI application, configuration, and utilities.
+-   `frontend/`: React + Vite frontend application.
+-   `apikey.env`: Your local API keys (ignored by git).
+-   `docker-compose.yml`: Orchestration for the entire stack.
+
+---
+
+## 🛠️ Project Maintenance
 
 -   **Stopping the app**: `docker-compose down`
 -   **Viewing logs**: `docker-compose logs -f`

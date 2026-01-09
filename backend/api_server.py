@@ -29,7 +29,12 @@ from Utils.Agents import (
 )
 
 # Load environment variables
-load_dotenv(dotenv_path='apikey.env')
+if os.path.exists('apikey.env'):
+    load_dotenv(dotenv_path='apikey.env')
+elif os.path.exists('../apikey.env'):
+    load_dotenv(dotenv_path='../apikey.env')
+else:
+    load_dotenv() # Fallback to standard .env search
 
 app = FastAPI(title="MedAuraAI API", version="1.0.0")
 

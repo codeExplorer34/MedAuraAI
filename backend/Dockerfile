@@ -19,13 +19,9 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy application code
-COPY Main.py .
 COPY api_server.py .
-COPY export_cases.py .
 COPY Utils/ ./Utils/
-COPY medical_reports/ ./medical_reports/
-COPY cases_data/ ./cases_data/
-COPY results/ ./results/
+RUN mkdir -p medical_reports cases_data results
 
 # NOTE: API keys should be provided via environment variables, NOT copied into the image
 # Use docker-compose with env_file or pass -e flags at runtime

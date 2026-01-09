@@ -4,7 +4,7 @@
 services:
   backend:
     build:
-      context: .
+      context: ./backend
       dockerfile: Dockerfile
     container_name: medaura-backend
     ports:
@@ -14,9 +14,9 @@ services:
     environment:
       - PYTHONUNBUFFERED=1
     volumes:
-      - ./cases_data:/app/cases_data
-      - ./results:/app/results
-      - ./medical_reports:/app/medical_reports
+      - ./backend/cases_data:/app/cases_data
+      - ./backend/results:/app/results
+      - ./backend/medical_reports:/app/medical_reports
     restart: unless-stopped
     networks:
       - medaura-network

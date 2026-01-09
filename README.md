@@ -22,14 +22,14 @@ MedAura AI is an advanced medical diagnostics platform that leverages artificial
 
 ### 🎯 Key Features
 
-- **Multi-Agent AI System**: Five specialized medical AI agents working collaboratively
-- **ER Co-Pilot**: Emergency room clinical decision support tool
-- **MDT Review Dashboard**: Multidisciplinary team case review interface
-- **PDF Report Parsing**: Automatic extraction of medical data from PDF reports
-- **Treatment Recommendations**: AI-generated personalized treatment plans with success rates
-- **Real-time Case Tracking**: Monitor diagnostic progress through intuitive dashboards
-- **Docker Deployment**: Fully containerized for easy deployment
-- **RESTful API**: Comprehensive FastAPI backend with full CORS support
+-   **Multi-Agent AI System**: Five specialized medical AI agents working collaboratively
+-   **ER Co-Pilot**: Emergency room clinical decision support tool
+-   **MDT Review Dashboard**: Multidisciplinary team case review interface
+-   **PDF Report Parsing**: Automatic extraction of medical data from PDF reports
+-   **Treatment Recommendations**: AI-generated personalized treatment plans with success rates
+-   **Real-time Case Tracking**: Monitor diagnostic progress through intuitive dashboards
+-   **Docker Deployment**: Fully containerized for easy deployment
+-   **RESTful API**: Comprehensive FastAPI backend with full CORS support
 
 ---
 
@@ -79,48 +79,51 @@ MedAura AI is an advanced medical diagnostics platform that leverages artificial
 
 ### Prerequisites
 
-- **Python 3.9+**
-- **Node.js 16+** and npm
-- **Docker & Docker Compose** (for containerized deployment)
-- **Google Gemini API Key** ([Get one here](https://makersuite.google.com/app/apikey))
+-   **Python 3.9+**
+-   **Node.js 16+** and npm
+-   **Docker & Docker Compose** (for containerized deployment)
+-   **Google Gemini API Key** ([Get one here](https://makersuite.google.com/app/apikey))
 
 ### Option 1: Docker Deployment (Recommended)
 
 1. **Clone the repository**
-   ```bash
-   git clone https://github.com/yourusername/MedAura-AI.git
-   cd MedAura-AI
-   ```
+
+    ```bash
+    git clone https://github.com/yourusername/MedAura-AI.git
+    cd MedAura-AI
+    ```
 
 2. **Set up environment variables**
-   ```bash
-   cp .env.example .env
-   # Edit .env and add your Google Gemini API key
-   ```
+
+    ```bash
+    cp .env.example .env
+    # Edit .env and add your Google Gemini API key
+    ```
 
 3. **Start with Docker Compose**
-   ```bash
-   docker-compose up -d
-   ```
+
+    ```bash
+    docker-compose up -d
+    ```
 
 4. **Access the application**
-   - Frontend: http://localhost:5173
-   - Backend API: http://localhost:8000
-   - API Docs: http://localhost:8000/docs
+    - Frontend: http://localhost:5173
+    - Backend API: http://localhost:8000
+    - API Docs: http://localhost:8000/docs
 
 ### Option 2: Local Development
 
 #### Backend Setup
 
 ```bash
-# Navigate to project root
-cd MedAura-AI
+# Navigate to backend directory
+cd backend
 
 # Install Python dependencies
 pip install -r requirements.txt
 
 # Set up environment variables
-cp .env.example apikey.env
+cp ../apikey.env apikey.env
 # Edit apikey.env and add your Google Gemini API key
 
 # Start the FastAPI server
@@ -150,14 +153,14 @@ The frontend will be available at `http://localhost:5173`
 
 ### API Endpoints
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| `GET` | `/` | API health check |
-| `POST` | `/api/cases` | Create new medical case |
-| `GET` | `/api/cases` | List all cases (optional status filter) |
-| `GET` | `/api/cases/{id}` | Get specific case details |
-| `POST` | `/api/cases/{id}/rerun` | Rerun AI agents for a case |
-| `POST` | `/api/cases/parse-report` | Parse PDF medical report |
+| Method | Endpoint                  | Description                             |
+| ------ | ------------------------- | --------------------------------------- |
+| `GET`  | `/`                       | API health check                        |
+| `POST` | `/api/cases`              | Create new medical case                 |
+| `GET`  | `/api/cases`              | List all cases (optional status filter) |
+| `GET`  | `/api/cases/{id}`         | Get specific case details               |
+| `POST` | `/api/cases/{id}/rerun`   | Rerun AI agents for a case              |
+| `POST` | `/api/cases/parse-report` | Parse PDF medical report                |
 
 For detailed API documentation, visit http://localhost:8000/docs when running the server.
 
@@ -193,31 +196,35 @@ The system includes five specialized medical agents:
 5. **Psychiatrist**: Mental health and psychiatric conditions
 
 These agents work in parallel, then their findings are synthesized by the **Multidisciplinary Team Agent** to produce:
-- Final diagnosis
-- Confidence scores
-- Treatment recommendations with success rates
-- Personalized notes and procedure steps
+
+-   Final diagnosis
+-   Confidence scores
+-   Treatment recommendations with success rates
+-   Personalized notes and procedure steps
 
 ---
 
 ## 🎨 Frontend Features
 
 ### Landing Page
-- Modern, responsive design with Apple-inspired aesthetics
-- Feature showcase and value propositions
-- Interactive animations and smooth transitions
+
+-   Modern, responsive design with Apple-inspired aesthetics
+-   Feature showcase and value propositions
+-   Interactive animations and smooth transitions
 
 ### ER Co-Pilot
-- Quick case intake wizard
-- Template-based data entry
-- Real-time form validation
-- Clinical decision support
+
+-   Quick case intake wizard
+-   Template-based data entry
+-   Real-time form validation
+-   Clinical decision support
 
 ### MDT Review Dashboard
-- Case timeline visualization
-- Specialist perspectives display
-- Treatment options comparison table
-- Clinical governance compliance footer
+
+-   Case timeline visualization
+-   Specialist perspectives display
+-   Treatment options comparison table
+-   Clinical governance compliance footer
 
 ---
 
@@ -241,8 +248,8 @@ docker-compose down
 
 ### Environment-Specific Configurations
 
-- **Development**: `docker-compose.yml`
-- **Production**: `docker-compose.prod.yml` (optimized builds, health checks)
+-   **Development**: `docker-compose.yml`
+-   **Production**: `docker-compose.prod.yml` (optimized builds, health checks)
 
 For detailed deployment instructions, see [DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md).
 
@@ -254,27 +261,24 @@ For detailed deployment instructions, see [DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE
 
 ```
 MedAura-AI/
-├── api_server.py          # FastAPI backend server
-├── Main.py                # Standalone diagnostic script
-├── Utils/
-│   └── Agents.py          # AI agent implementations
-├── frontend/              # React frontend
-│   ├── src/
-│   │   ├── components/    # React components
-│   │   ├── api/          # API client
-│   │   └── App.jsx       # Main app component
-│   └── package.json
-├── Medical Reports/       # Sample medical reports
-├── cases_data/           # Stored case JSON files
-├── Results/              # Diagnostic results
-├── docker-compose.yml    # Docker orchestration
-├── Dockerfile            # Backend Docker image
-└── requirements.txt      # Python dependencies
+├── backend/              # FastAPI backend application
+│   ├── api_server.py     # Main backend entry point
+│   ├── requirements.txt  # Backend dependencies
+│   ├── Utils/            # AI agent logic
+│   ├── medical_reports/  # Sample patient data
+│   └── cases_data/       # Processed case storage
+├── frontend/             # React + Vite frontend
+│   ├── src/              # Application source
+│   └── package.json      # Frontend dependencies
+├── docker-compose.yml    # Main orchestration file
+├── QUICK_START.md        # Startup guide
+└── apikey.env            # Local API keys (ignored)
 ```
 
 ### Running Linters
 
 **Backend (Python)**
+
 ```bash
 # Install dev dependencies
 pip install flake8 black isort
@@ -286,6 +290,7 @@ isort --check .
 ```
 
 **Frontend (JavaScript)**
+
 ```bash
 cd frontend
 npm run lint
@@ -293,9 +298,9 @@ npm run lint
 
 ### Code Style
 
-- **Python**: Follow PEP 8, use Black for formatting
-- **JavaScript**: ESLint with React configuration
-- **Commits**: Follow [Conventional Commits](https://www.conventionalcommits.org/)
+-   **Python**: Follow PEP 8, use Black for formatting
+-   **JavaScript**: ESLint with React configuration
+-   **Commits**: Follow [Conventional Commits](https://www.conventionalcommits.org/)
 
 ---
 
@@ -303,10 +308,10 @@ npm run lint
 
 We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for details on:
 
-- Code of Conduct
-- Development setup
-- Pull request process
-- Coding standards
+-   Code of Conduct
+-   Development setup
+-   Pull request process
+-   Coding standards
 
 ### Quick Contribution Guide
 
@@ -332,17 +337,17 @@ For security concerns or vulnerability reports, please see [SECURITY.md](SECURIT
 
 ## 🙏 Acknowledgments
 
-- **LangChain** for the AI agent framework
-- **Google Gemini** for the generative AI capabilities
-- **FastAPI** for the high-performance backend
-- **React** and **Vite** for the modern frontend stack
+-   **LangChain** for the AI agent framework
+-   **Google Gemini** for the generative AI capabilities
+-   **FastAPI** for the high-performance backend
+-   **React** and **Vite** for the modern frontend stack
 
 ---
 
 ## 📧 Contact & Support
 
-- **Issues**: [GitHub Issues](https://github.com/yourusername/MedAura-AI/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/MedAura-AI/discussions)
+-   **Issues**: [GitHub Issues](https://github.com/yourusername/MedAura-AI/issues)
+-   **Discussions**: [GitHub Discussions](https://github.com/yourusername/MedAura-AI/discussions)
 
 ---
 
