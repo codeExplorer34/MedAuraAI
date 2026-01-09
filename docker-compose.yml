@@ -1,0 +1,39 @@
+# MedAura AI Docker Compose Configuration
+# Usage: docker-compose up -d
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: medaura-backend
+    ports:
+      - "8000:8000"
+    env_file:
+      - apikey.env # Load API keys from env file (not copied into image)
+    environment:
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - ./cases_data:/app/cases_data
+      - ./results:/app/results
+      - ./medical_reports:/app/medical_reports
+    restart: unless-stopped
+    networks:
+      - medaura-network
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: medaura-frontend
+    ports:
+      - "5173:80"
+    depends_on:
+      - backend
+    restart: unless-stopped
+    networks:
+      - medaura-network
+
+networks:
+  medaura-network:
+    driver: bridge

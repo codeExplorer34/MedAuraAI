@@ -1,0 +1,195 @@
+/**
+ * Animated Chatbot Widget Styles
+ * Clean, modern chatbot interface with smooth animations
+ */
+
+.animated-chatbot-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* ============================================
+   WELCOME MESSAGE BUBBLE
+   ============================================ */
+
+.chatbot-welcome {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.chatbot-welcome.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.chatbot-icon {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, #2DD4BF, #38BDF8);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    box-shadow: 0 4px 12px rgba(45, 212, 191, 0.3);
+}
+
+.chatbot-icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+.chatbot-message {
+    flex: 1;
+    background: white;
+    border-radius: 16px;
+    padding: 1.25rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.chatbot-text {
+    color: #1F2937;
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    margin: 0 0 0.5rem 0;
+}
+
+.chatbot-meta {
+    color: #9CA3AF;
+    font-size: 0.75rem;
+    margin: 0;
+}
+
+/* ============================================
+   QUICK RESPONSE OPTIONS
+   ============================================ */
+
+.chatbot-options {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.75rem;
+}
+
+.chatbot-option {
+    background: white;
+    border: 1px solid #E5E7EB;
+    border-radius: 24px;
+    padding: 0.75rem 1.5rem;
+    color: #4F46E5;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+    opacity: 0;
+    transform: translateX(20px) translateY(10px);
+    white-space: nowrap;
+}
+
+.chatbot-option.show {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+}
+
+.chatbot-option:hover {
+    background: #F9FAFB;
+    border-color: #4F46E5;
+    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.15);
+    transform: translateX(-2px);
+}
+
+.chatbot-option:active {
+    transform: translateX(-2px) scale(0.98);
+}
+
+/* ============================================
+   STAGGERED ANIMATION DELAYS
+   ============================================ */
+
+.chatbot-option:nth-child(1) {
+    transition-delay: 0ms;
+}
+
+.chatbot-option:nth-child(2) {
+    transition-delay: 100ms;
+}
+
+.chatbot-option:nth-child(3) {
+    transition-delay: 200ms;
+}
+
+.chatbot-option:nth-child(4) {
+    transition-delay: 300ms;
+}
+
+.chatbot-option:nth-child(5) {
+    transition-delay: 400ms;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 640px) {
+    .animated-chatbot-container {
+        padding: 1rem;
+    }
+
+    .chatbot-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .chatbot-icon svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .chatbot-message {
+        padding: 1rem;
+    }
+
+    .chatbot-text {
+        font-size: 0.875rem;
+    }
+
+    .chatbot-option {
+        padding: 0.625rem 1.25rem;
+        font-size: 0.8125rem;
+    }
+}
+
+/* ============================================
+   DARK MODE SUPPORT
+   ============================================ */
+
+@media (prefers-color-scheme: dark) {
+    .chatbot-message {
+        background: #1F2937;
+        border-color: #374151;
+    }
+
+    .chatbot-text {
+        color: #F9FAFB;
+    }
+
+    .chatbot-option {
+        background: #1F2937;
+        border-color: #374151;
+        color: #60A5FA;
+    }
+
+    .chatbot-option:hover {
+        background: #374151;
+        border-color: #60A5FA;
+    }
+}

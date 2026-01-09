@@ -1,0 +1,104 @@
+/* Premium Statistics Cards - Clean & Compact */
+.stat-card-premium {
+    position: relative;
+    padding: 24px 20px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, rgba(30, 41, 59, 0.8), rgba(15, 23, 42, 0.9));
+    border: 1px solid rgba(148, 163, 184, 0.15);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.stat-card-premium:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Color themes for each card */
+.stat-card-0 {
+    border-color: rgba(56, 189, 248, 0.25);
+}
+
+.stat-card-0:hover {
+    border-color: rgba(56, 189, 248, 0.5);
+}
+
+.stat-card-1 {
+    border-color: rgba(168, 85, 247, 0.25);
+}
+
+.stat-card-1:hover {
+    border-color: rgba(168, 85, 247, 0.5);
+}
+
+.stat-card-2 {
+    border-color: rgba(236, 72, 153, 0.25);
+}
+
+.stat-card-2:hover {
+    border-color: rgba(236, 72, 153, 0.5);
+}
+
+/* Hide particles */
+.stat-particle {
+    display: none;
+}
+
+/* Hide shimmer */
+.stat-shimmer {
+    display: none;
+}
+
+/* Content */
+.stat-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 3.25rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 8px;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+/* Color-coded number on hover */
+.stat-card-0:hover .stat-number {
+    color: #38bdf8;
+}
+
+.stat-card-1:hover .stat-number {
+    color: #a855f7;
+}
+
+.stat-card-2:hover .stat-number {
+    color: #ec4899;
+}
+
+.stat-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #94a3b8;
+}
+
+/* Hide glow */
+.stat-glow {
+    display: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .stat-card-premium {
+        padding: 20px 16px;
+    }
+
+    .stat-number {
+        font-size: 1.875rem;
+    }
+}

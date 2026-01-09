@@ -1,0 +1,96 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "medaura-ai"
+version = "1.0.0"
+description = "AI-Powered Medical Diagnostics Platform with Multi-Agent System"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+authors = [
+    {name = "MedAura AI Team"}
+]
+keywords = ["ai", "medical", "diagnostics", "langchain", "fastapi", "multi-agent"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Healthcare Industry",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Medical Science Apps.",
+]
+
+dependencies = [
+    "langchain>=0.1.0,<0.3.0",
+    "langchain-community>=0.0.10,<0.3.0",
+    "langchain-google-genai>=1.0.0,<2.0.0",
+    "fastapi>=0.109.0,<0.200.0",
+    "uvicorn[standard]>=0.25.0,<1.0.0",
+    "python-dotenv>=1.0.0,<2.0.0",
+    "pdfplumber>=0.10.0,<1.0.0",
+    "pypdf2>=3.0.0,<4.0.0",
+    "reportlab>=4.0.0,<5.0.0",
+    "jinja2>=3.1.0,<4.0.0",
+    "python-multipart>=0.0.6,<1.0.0",
+    "pydantic>=2.0.0,<3.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "flake8>=7.0.0",
+    "black>=24.0.0",
+    "isort>=5.13.0",
+    "mypy>=1.8.0",
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.23.0",
+    "httpx>=0.26.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/MedAura-AI"
+Documentation = "https://github.com/yourusername/MedAura-AI/tree/main/docs"
+Repository = "https://github.com/yourusername/MedAura-AI.git"
+Issues = "https://github.com/yourusername/MedAura-AI/issues"
+
+[project.scripts]
+medaura-server = "api_server:main"
+
+[tool.black]
+line-length = 100
+target-version = ['py39', 'py310', 'py311', 'py312']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.venv
+  | env
+  | build
+  | dist
+  | __pycache__
+)/
+'''
+
+[tool.isort]
+profile = "black"
+line_length = 100
+skip = [".git", ".venv", "env", "build", "dist", "__pycache__"]
+
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true
+ignore_missing_imports = true
+exclude = ["env", ".venv", "build", "dist"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+python_files = ["test_*.py", "*_test.py"]
+addopts = "-v --tb=short"

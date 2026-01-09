@@ -1,0 +1,209 @@
+/* EMS Mode - Refined High Visibility Theme (Keeps MedAura Brand) */
+
+.ems-mode {
+    /* Soft light background instead of pure white */
+    background: linear-gradient(to bottom, #f8fafc, #e2e8f0) !important;
+    color: #0f172a !important;
+}
+
+/* Text Colors - Readable but not harsh */
+.ems-mode .text-white {
+    color: #0f172a !important;
+}
+
+.ems-mode .text-slate-100,
+.ems-mode .text-slate-200,
+.ems-mode .text-slate-300,
+.ems-mode .text-slate-400 {
+    color: #334155 !important;
+}
+
+.ems-mode .text-slate-500 {
+    color: #64748b !important;
+}
+
+/* Backgrounds - Keep some depth */
+.ems-mode .bg-slate-950,
+.ems-mode .bg-slate-900 {
+    background: #ffffff !important;
+    border: 2px solid #cbd5e1 !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
+}
+
+.ems-mode .bg-slate-800 {
+    background: #f1f5f9 !important;
+    border: 1px solid #cbd5e1 !important;
+}
+
+.ems-mode .bg-slate-900\/50,
+.ems-mode .bg-slate-950\/50 {
+    background: #f8fafc !important;
+    border: 1px solid #e2e8f0 !important;
+}
+
+/* Borders - Softer but visible */
+.ems-mode .border-slate-800,
+.ems-mode .border-slate-700 {
+    border-color: #cbd5e1 !important;
+}
+
+/* Buttons - Keep MedAura gradient style but lighter */
+.ems-mode button {
+    background: linear-gradient(to right, #0284c7, #4f46e5) !important;
+    color: #ffffff !important;
+    border: 2px solid #0284c7 !important;
+    font-weight: 600 !important;
+    font-size: 1rem !important;
+    min-height: 50px !important;
+    box-shadow: 0 2px 4px rgba(2, 132, 199, 0.2) !important;
+}
+
+.ems-mode button:hover {
+    background: linear-gradient(to right, #0369a1, #4338ca) !important;
+    transform: scale(1.02);
+}
+
+/* Input Fields - Clearer but not harsh */
+.ems-mode input,
+.ems-mode textarea {
+    background: #ffffff !important;
+    color: #0f172a !important;
+    border: 2px solid #cbd5e1 !important;
+    font-size: 1rem !important;
+    font-weight: 500 !important;
+}
+
+.ems-mode input:focus,
+.ems-mode textarea:focus {
+    border-color: #0284c7 !important;
+    box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.1) !important;
+}
+
+.ems-mode input::placeholder,
+.ems-mode textarea::placeholder {
+    color: #94a3b8 !important;
+}
+
+/* Urgency Indicators - Bright but not overwhelming */
+.ems-mode .text-red-400,
+.ems-mode .text-red-300,
+.ems-mode .text-red-200 {
+    color: #dc2626 !important;
+    font-weight: 700 !important;
+    font-size: 1.1em !important;
+}
+
+.ems-mode .bg-red-500\/20,
+.ems-mode .bg-red-900\/20 {
+    background: #fef2f2 !important;
+    border: 2px solid #fca5a5 !important;
+}
+
+.ems-mode .text-amber-400,
+.ems-mode .text-amber-300,
+.ems-mode .text-amber-200 {
+    color: #d97706 !important;
+    font-weight: 700 !important;
+}
+
+.ems-mode .bg-amber-500\/20,
+.ems-mode .bg-amber-900\/20 {
+    background: #fffbeb !important;
+    border: 2px solid #fcd34d !important;
+}
+
+.ems-mode .text-green-400,
+.ems-mode .text-green-300 {
+    color: #16a34a !important;
+    font-weight: 600 !important;
+}
+
+.ems-mode .bg-green-500\/20,
+.ems-mode .bg-green-900\/20 {
+    background: #f0fdf4 !important;
+    border: 2px solid #86efac !important;
+}
+
+/* Sky/Blue Colors - Keep MedAura brand */
+.ems-mode .text-sky-400,
+.ems-mode .text-sky-300 {
+    color: #0284c7 !important;
+    font-weight: 600 !important;
+}
+
+.ems-mode .bg-sky-600,
+.ems-mode .bg-sky-500 {
+    background: #0284c7 !important;
+}
+
+.ems-mode .bg-sky-900\/20 {
+    background: #f0f9ff !important;
+    border: 1px solid #bae6fd !important;
+}
+
+/* Gradients - Keep brand colors */
+.ems-mode .bg-gradient-to-r,
+.ems-mode .bg-gradient-to-br {
+    background: linear-gradient(to right, #0284c7, #4f46e5) !important;
+    color: #ffffff !important;
+}
+
+/* Cards - Soft shadows for depth */
+.ems-mode [class*="rounded-xl"],
+.ems-mode [class*="rounded-lg"] {
+    background: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Slightly larger font for readability */
+.ems-mode {
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+}
+
+/* Headers - Bold but not overwhelming */
+.ems-mode h1,
+.ems-mode h2,
+.ems-mode h3,
+.ems-mode h4 {
+    color: #0f172a !important;
+    font-weight: 700 !important;
+}
+
+/* Labels - Clear */
+.ems-mode label {
+    color: #334155 !important;
+    font-weight: 600 !important;
+}
+
+/* Shadows - Subtle for depth */
+.ems-mode {
+    --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1) !important;
+}
+
+/* Focus States - Brand color */
+.ems-mode *:focus {
+    outline: 3px solid #0284c7 !important;
+    outline-offset: 2px !important;
+}
+
+/* Badges - Softer */
+.ems-mode [class*="badge"],
+.ems-mode [class*="px-3 py-1"] {
+    border: 1px solid #cbd5e1 !important;
+    font-weight: 600 !important;
+}
+
+/* Keep navbar/header dark for brand consistency */
+.ems-mode nav,
+.ems-mode header {
+    background: #0f172a !important;
+    color: #ffffff !important;
+}
+
+/* Toggle container in EMS mode */
+.ems-mode .fixed.top-4.right-4 {
+    background: #ffffff !important;
+    border: 2px solid #cbd5e1 !important;
+}

@@ -1,7 +1,7 @@
 # Importing the needed modules 
 from dotenv import load_dotenv
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from Utils.Agents import (
+from utils.Agents import (
     Internist,
     Neurologist,
     Cardiologist,
@@ -29,7 +29,7 @@ load_dotenv(dotenv_path='apikey.env')
 MEDICAL_REPORT_FILE = "Medical Report - Charles Baker - Prostate Cancer (Suspicion).txt"
 
 # Read the medical report
-with open(os.path.join("Medical Reports", MEDICAL_REPORT_FILE), "r", encoding="utf-8") as file:
+with open(os.path.join("medical_reports", MEDICAL_REPORT_FILE), "r", encoding="utf-8") as file:
     medical_report = file.read()
 
 # Load API keys for each agent from environment variables

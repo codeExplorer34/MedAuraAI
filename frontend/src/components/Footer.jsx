@@ -1,83 +1,85 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
-  const linkClass = ({ isActive }) =>
-    "footer-link" + (isActive ? " footer-link-active" : "");
-
   return (
-    <footer className="footer">
-      <div className="footer-container">
-        <div className="footer-column">
-          <div className="footer-brand">
-            <div className="footer-logo-container">
-              <img 
-                src="/MedAuraAI Logo.png" 
-                alt="MedAura AI Logo" 
-                className="footer-logo-icon"
+    <footer style={{
+      background: "var(--bg-secondary)",
+      borderTop: "1px solid var(--border-subtle)",
+      padding: "64px 0 32px"
+    }}>
+      <div className="container">
+        <div style={{
+          display: "flex", flexWrap: "wrap", gap: "48px",
+          justifyContent: "space-between", marginBottom: "48px"
+        }}>
+          {/* Brand Column */}
+          <div style={{ maxWidth: "300px" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "16px" }}>
+              <img
+                src="/MedAuraAI Logo.png"
+                alt="MedAura Logo"
+                style={{ height: "24px", width: "auto", filter: "grayscale(100%) opacity(0.8)" }}
               />
-              <span className="footer-brand-name">MedAura AI</span>
+              <span style={{ fontSize: "1.1rem", fontWeight: "700", color: "var(--text-primary)" }}>
+                MedAura AI
+              </span>
             </div>
-            <p className="footer-tagline">Powered by multi-specialist AI agents</p>
-            <p className="footer-description">
-              MedAura AI delivers exceptional diagnostic accuracy through advanced 
-              artificial intelligence. Your privacy and data security are our top priorities, 
-              ensuring trusted, confidential medical analysis with enterprise-grade protection.
+            <p style={{ fontSize: "0.9rem", lineHeight: "1.6" }}>
+              Clinical decision-support for ER and follow-up. No diagnoses. No prescriptions.
             </p>
           </div>
-        </div>
 
-        <div className="footer-column">
-          <h3 className="footer-column-title">Quick Links</h3>
-          <nav className="footer-nav">
-            <NavLink to="/" className={linkClass} end>
-              Home
-            </NavLink>
-            <NavLink to="/cases/new" className={linkClass}>
-              Analyze Case
-            </NavLink>
-            <NavLink to="/cases" className={linkClass}>
-              Previous Analyses
-            </NavLink>
-            <NavLink to="/about" className={linkClass}>
-              About Us
-            </NavLink>
-          </nav>
-        </div>
-
-        <div className="footer-column">
-          <h3 className="footer-column-title">Powered By</h3>
-          <div className="footer-tech-stack">
-            <div className="tech-item">
-              <span className="tech-dot tech-dot-react"></span>
-              <span>React</span>
-            </div>
-            <div className="tech-item">
-              <span className="tech-dot tech-dot-node"></span>
-              <span>Node.js</span>
-            </div>
-            <div className="tech-item">
-              <span className="tech-dot tech-dot-ai"></span>
-              <span>Tailwind CSS</span>
-            </div>
-            <div className="tech-item">
-              <span className="tech-dot tech-dot-python"></span>
-              <span>Python</span>
-            </div>
-            <div className="tech-item">
-              <span className="tech-dot tech-dot-fastapi"></span>
-              <span>FastAPI</span>
+          {/* Links Column */}
+          <div>
+            <h4 style={{ marginBottom: "16px", color: "var(--text-primary)" }}>Quick Links</h4>
+            <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+              <Link to="/" className="nav-link" style={{ margin: 0 }}>Home</Link>
+              <Link to="/er-copilot" className="nav-link" style={{ margin: 0 }}>Emergency Care</Link>
+              <Link to="/mdt-review" className="nav-link" style={{ margin: 0 }}>Team Coordination</Link>
+              <a
+                href="/#pricing"
+                className="nav-link"
+                style={{ margin: 0 }}
+                onClick={(e) => {
+                  e.preventDefault();
+                  const pricingSection = document.querySelector('#pricing-section');
+                  if (pricingSection) {
+                    pricingSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                  } else {
+                    window.location.href = '/#pricing';
+                  }
+                }}
+              >
+                Pricing
+              </a>
+              <Link to="/about" className="nav-link" style={{ margin: 0 }}>About</Link>
             </div>
           </div>
-          
+
+          {/* Tech Stack Column */}
+          <div>
+            <h4 style={{ marginBottom: "16px", color: "var(--text-primary)" }}>Powered By</h4>
+            <div style={{ display: "flex", gap: "16px", color: "var(--text-secondary)", fontSize: "1.2rem" }}>
+              <span title="React">⚛️</span>
+              <span title="Node.js">🟢</span>
+              <span title="Python">🐍</span>
+              <span title="FastAPI">⚡</span>
+            </div>
+          </div>
         </div>
-      </div>
-      <div className="footer-bottom">
-        <p className="footer-copyright">
-          © 2025 MedAura AI. All rights reserved. Built with precision for healthcare innovation.
-        </p>
+
+        {/* Bottom Bar */}
+        <div style={{
+          borderTop: "1px solid var(--border-subtle)",
+          paddingTop: "32px",
+          textAlign: "center",
+          fontSize: "0.85rem",
+          color: "var(--text-muted)"
+        }}>
+          © {new Date().getFullYear()} MedAura AI. All rights reserved.
+        </div>
       </div>
     </footer>
   );
 }
-

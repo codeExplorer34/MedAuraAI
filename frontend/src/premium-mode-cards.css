@@ -1,0 +1,302 @@
+/* Premium Mode Selection Cards (ER vs MDT) */
+.mode-card-premium {
+    position: relative;
+    padding: 50px 40px;
+    border-radius: 32px;
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(30, 41, 59, 0.9));
+    border: 1px solid rgba(148, 163, 184, 0.15);
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.mode-card-premium:hover {
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 30px 90px rgba(0, 0, 0, 0.6);
+}
+
+/* Animated border glow */
+.mode-card-border-glow {
+    position: absolute;
+    inset: -3px;
+    border-radius: 32px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    animation: rotate-mode-gradient 6s linear infinite;
+    background-size: 300% 300%;
+}
+
+.mode-border-er {
+    background: linear-gradient(60deg,
+            transparent,
+            rgba(239, 68, 68, 0.6),
+            transparent,
+            rgba(249, 115, 22, 0.6),
+            transparent);
+}
+
+.mode-border-mdt {
+    background: linear-gradient(60deg,
+            transparent,
+            rgba(56, 189, 248, 0.6),
+            transparent,
+            rgba(34, 211, 238, 0.6),
+            transparent);
+}
+
+.mode-card-premium:hover .mode-card-border-glow {
+    opacity: 1;
+}
+
+@keyframes rotate-mode-gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Top accent bar */
+.mode-card-accent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    border-radius: 32px 32px 0 0;
+}
+
+.mode-accent-er {
+    background: linear-gradient(90deg, #ef4444, #f97316, #ef4444);
+    background-size: 200% 100%;
+    animation: accent-slide 3s ease-in-out infinite;
+}
+
+.mode-accent-mdt {
+    background: linear-gradient(90deg, #38bdf8, #22d3ee, #38bdf8);
+    background-size: 200% 100%;
+    animation: accent-slide 3s ease-in-out infinite;
+}
+
+@keyframes accent-slide {
+
+    0%,
+    100% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+/* Corner glow */
+.mode-card-corner-glow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.15;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.mode-glow-er {
+    background: radial-gradient(circle, #ef4444, transparent);
+}
+
+.mode-glow-mdt {
+    background: radial-gradient(circle, #38bdf8, transparent);
+}
+
+.mode-card-premium:hover .mode-card-corner-glow {
+    opacity: 0.3;
+    transform: scale(1.2);
+}
+
+/* Feature ray */
+.mode-card-ray {
+    position: absolute;
+    width: 500px;
+    height: 100px;
+    top: 20%;
+    right: -20%;
+    filter: blur(25px);
+    opacity: 0;
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.mode-ray-er {
+    background: linear-gradient(90deg, transparent, rgba(239, 68, 68, 0.2), transparent);
+    transform: rotate(-40deg);
+}
+
+.mode-ray-mdt {
+    background: linear-gradient(90deg, transparent, rgba(56, 189, 248, 0.2), transparent);
+    transform: rotate(-40deg);
+}
+
+.mode-card-premium:hover .mode-card-ray {
+    opacity: 1;
+    transform: rotate(-40deg) translateX(-100px);
+}
+
+/* Content */
+.mode-card-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* Badge */
+.mode-card-badge {
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.mode-badge-urgent {
+    background: rgba(239, 68, 68, 0.15);
+    color: #fca5a5;
+    border-color: rgba(239, 68, 68, 0.3);
+    animation: pulse-urgent 2s ease-in-out infinite;
+}
+
+.mode-badge-comprehensive {
+    background: rgba(56, 189, 248, 0.15);
+    color: #7dd3fc;
+    border-color: rgba(56, 189, 248, 0.3);
+}
+
+@keyframes pulse-urgent {
+
+    0%,
+    100% {
+        box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.4);
+    }
+
+    50% {
+        box-shadow: 0 0 0 8px rgba(239, 68, 68, 0);
+    }
+}
+
+/* Features */
+.mode-card-feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    color: #cbd5e1;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.mode-card-premium:hover .mode-card-feature {
+    transform: translateX(8px);
+    color: #e2e8f0;
+}
+
+.mode-feature-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+    animation: icon-float 3s ease-in-out infinite;
+}
+
+@keyframes icon-float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-4px);
+    }
+}
+
+.mode-feature-text {
+    line-height: 1.6;
+}
+
+/* CTA Button */
+.mode-card-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 18px 32px;
+    border-radius: 14px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.mode-cta-er {
+    background: linear-gradient(135deg, #dc2626 0%, #ea580c 100%);
+    box-shadow: 0 10px 30px rgba(220, 38, 38, 0.3);
+}
+
+.mode-cta-mdt {
+    background: linear-gradient(135deg, #0284c7 0%, #06b6d4 100%);
+    box-shadow: 0 10px 30px rgba(2, 132, 199, 0.3);
+}
+
+.mode-card-cta:hover {
+    transform: translateY(-4px);
+}
+
+.mode-cta-er:hover {
+    box-shadow: 0 15px 40px rgba(220, 38, 38, 0.5);
+}
+
+.mode-cta-mdt:hover {
+    box-shadow: 0 15px 40px rgba(2, 132, 199, 0.5);
+}
+
+/* Shimmer effect on button */
+.mode-cta-shimmer {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent);
+    transform: translateX(-100%);
+    transition: transform 0.8s ease;
+}
+
+.mode-card-cta:hover .mode-cta-shimmer {
+    transform: translateX(100%);
+}
+
+.mode-cta-text {
+    position: relative;
+    z-index: 1;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .mode-card-premium {
+        padding: 40px 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .mode-card-premium {
+        padding: 30px 24px;
+    }
+
+    .mode-feature-icon {
+        font-size: 1.25rem;
+    }
+}

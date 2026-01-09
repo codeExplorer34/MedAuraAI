@@ -1,0 +1,413 @@
+/**
+ * Professional Animated Background Styles
+ * Hospital-grade dashboard animation system
+ */
+
+.animated-background-overlay {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 1;
+}
+
+/* ============================================
+   1. PARALLAX LAYER (Subtle mouse movement)
+   ============================================ */
+
+.parallax-layer {
+    position: absolute;
+    inset: -5%;
+    background: transparent;
+    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ============================================
+   2. SLOW ZOOM ANIMATION
+   ============================================ */
+
+@keyframes slowZoom {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.03);
+    }
+}
+
+.zoom-layer {
+    position: absolute;
+    inset: 0;
+    background: transparent;
+    animation: slowZoom 20s ease-in-out infinite;
+}
+
+/* ============================================
+   3. SCANNING LINES
+   ============================================ */
+
+@keyframes scanVertical {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0.4;
+    }
+
+    80% {
+        opacity: 0.4;
+    }
+
+    100% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+}
+
+@keyframes scanHorizontal {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0.3;
+    }
+
+    80% {
+        opacity: 0.3;
+    }
+
+    100% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+.scan-line {
+    position: absolute;
+    background: linear-gradient(90deg,
+            transparent 0%,
+            rgba(45, 212, 191, 0.4) 50%,
+            transparent 100%);
+    pointer-events: none;
+}
+
+.scan-vertical-1 {
+    width: 100%;
+    height: 2px;
+    animation: scanVertical 6s ease-in-out infinite;
+    animation-delay: 0s;
+}
+
+.scan-vertical-2 {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg,
+            transparent 0%,
+            rgba(56, 189, 248, 0.3) 50%,
+            transparent 100%);
+    animation: scanVertical 8s ease-in-out infinite;
+    animation-delay: 3s;
+}
+
+.scan-horizontal {
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,
+            transparent 0%,
+            rgba(45, 212, 191, 0.3) 50%,
+            transparent 100%);
+    animation: scanHorizontal 10s ease-in-out infinite;
+    animation-delay: 1s;
+}
+
+/* ============================================
+   4. ANIMATED GRADIENT FLOW
+   ============================================ */
+
+@keyframes gradientFlow {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.gradient-flow {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg,
+            transparent 0%,
+            transparent 40%,
+            rgba(45, 212, 191, 0.08) 50%,
+            transparent 60%,
+            transparent 100%);
+    background-size: 200% 200%;
+    animation: gradientFlow 12s ease infinite;
+    mix-blend-mode: screen;
+}
+
+/* ============================================
+   5. PULSING DATA POINTS
+   ============================================ */
+
+@keyframes dataPulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+}
+
+@keyframes pingEffect {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(2.5);
+        opacity: 0;
+    }
+}
+
+.data-point-wrapper {
+    position: absolute;
+    animation: dataPulse 4s ease-in-out infinite;
+}
+
+.data-point-outer {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.data-point-outer.small {
+    width: 8px;
+    height: 8px;
+}
+
+.data-point-outer.medium {
+    width: 12px;
+    height: 12px;
+}
+
+.data-point-outer.large {
+    width: 16px;
+    height: 16px;
+}
+
+.data-point-ping {
+    position: absolute;
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: rgba(45, 212, 191, 0.6);
+    animation: pingEffect 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+.data-point-core {
+    position: relative;
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: rgba(45, 212, 191, 0.9);
+    box-shadow: 0 0 10px rgba(45, 212, 191, 0.6);
+}
+
+/* ============================================
+   6. SUBTLE GRID OVERLAY
+   ============================================ */
+
+@keyframes gridFade {
+
+    0%,
+    100% {
+        opacity: 0.03;
+    }
+
+    50% {
+        opacity: 0.08;
+    }
+}
+
+.grid-overlay {
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(45, 212, 191, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(45, 212, 191, 0.05) 1px, transparent 1px);
+    background-size: 50px 50px;
+    animation: gridFade 8s ease-in-out infinite;
+}
+
+/* ============================================
+   7. AMBIENT LIGHT SPOTS
+   ============================================ */
+
+@keyframes lightSpot1 {
+
+    0%,
+    100% {
+        transform: translate(0, 0) scale(1);
+        opacity: 0.15;
+    }
+
+    50% {
+        transform: translate(30px, -20px) scale(1.2);
+        opacity: 0.25;
+    }
+}
+
+@keyframes lightSpot2 {
+
+    0%,
+    100% {
+        transform: translate(0, 0) scale(1);
+        opacity: 0.1;
+    }
+
+    50% {
+        transform: translate(-20px, 30px) scale(1.3);
+        opacity: 0.2;
+    }
+}
+
+@keyframes lightSpot3 {
+
+    0%,
+    100% {
+        transform: translate(0, 0) scale(1);
+        opacity: 0.12;
+    }
+
+    50% {
+        transform: translate(25px, 25px) scale(1.15);
+        opacity: 0.22;
+    }
+}
+
+.light-spot {
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(45, 212, 191, 0.2) 0%, transparent 70%);
+    pointer-events: none;
+    filter: blur(40px);
+}
+
+.light-spot-1 {
+    width: 400px;
+    height: 400px;
+    top: 20%;
+    right: 15%;
+    animation: lightSpot1 15s ease-in-out infinite;
+}
+
+.light-spot-2 {
+    width: 350px;
+    height: 350px;
+    top: 50%;
+    right: 25%;
+    background: radial-gradient(circle, rgba(56, 189, 248, 0.15) 0%, transparent 70%);
+    animation: lightSpot2 18s ease-in-out infinite;
+    animation-delay: 2s;
+}
+
+.light-spot-3 {
+    width: 300px;
+    height: 300px;
+    top: 35%;
+    right: 35%;
+    animation: lightSpot3 12s ease-in-out infinite;
+    animation-delay: 4s;
+}
+
+/* ============================================
+   8. BREATHING ELEMENTS (for dashboard elements)
+   ============================================ */
+
+@keyframes breathe {
+
+    0%,
+    100% {
+        opacity: 0.5;
+        filter: brightness(1);
+    }
+
+    50% {
+        opacity: 0.8;
+        filter: brightness(1.1);
+    }
+}
+
+.breathing-element {
+    animation: breathe 6s ease-in-out infinite;
+}
+
+/* ============================================
+   9. RESPONSIVE ADJUSTMENTS
+   ============================================ */
+
+@media (max-width: 768px) {
+    .light-spot {
+        filter: blur(30px);
+    }
+
+    .light-spot-1,
+    .light-spot-2,
+    .light-spot-3 {
+        width: 250px;
+        height: 250px;
+    }
+
+    .data-point-outer.small {
+        width: 6px;
+        height: 6px;
+    }
+
+    .data-point-outer.medium {
+        width: 8px;
+        height: 8px;
+    }
+
+    .data-point-outer.large {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+/* ============================================
+   10. ACCESSIBILITY - Reduced Motion
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .animated-background-overlay *,
+    .animated-background-overlay *::before,
+    .animated-background-overlay *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}

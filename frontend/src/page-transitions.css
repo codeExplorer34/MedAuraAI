@@ -1,0 +1,198 @@
+/* Page Transitions & Scroll Animations */
+
+/* ========================================
+   PAGE TRANSITIONS
+   ======================================== */
+
+/* Fade in on page load */
+.page-transition-enter {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.page-transition-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+}
+
+.page-transition-exit {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.page-transition-exit-active {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease-in, transform 0.3s ease-in;
+}
+
+/* Simple fade transition for all pages */
+@keyframes pageIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.page-animate-in {
+    animation: pageIn 0.5s ease-out forwards;
+}
+
+/* ========================================
+   SCROLL REVEAL ANIMATIONS
+   ======================================== */
+
+/* Base state - hidden */
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.scroll-reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Fade up */
+.scroll-fade-up {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.7s ease-out, transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.scroll-fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Fade in from left */
+.scroll-fade-left {
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: opacity 0.7s ease-out, transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.scroll-fade-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Fade in from right */
+.scroll-fade-right {
+    opacity: 0;
+    transform: translateX(40px);
+    transition: opacity 0.7s ease-out, transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.scroll-fade-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Scale up */
+.scroll-scale-up {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.6s ease-out, transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.scroll-scale-up.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Staggered children animation */
+.scroll-stagger>* {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.scroll-stagger.visible>*:nth-child(1) {
+    transition-delay: 0.1s;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.scroll-stagger.visible>*:nth-child(2) {
+    transition-delay: 0.2s;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.scroll-stagger.visible>*:nth-child(3) {
+    transition-delay: 0.3s;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.scroll-stagger.visible>*:nth-child(4) {
+    transition-delay: 0.4s;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.scroll-stagger.visible>*:nth-child(5) {
+    transition-delay: 0.5s;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.scroll-stagger.visible>*:nth-child(6) {
+    transition-delay: 0.6s;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ========================================
+   DELAYS
+   ======================================== */
+
+.delay-100 {
+    transition-delay: 0.1s !important;
+}
+
+.delay-200 {
+    transition-delay: 0.2s !important;
+}
+
+.delay-300 {
+    transition-delay: 0.3s !important;
+}
+
+.delay-400 {
+    transition-delay: 0.4s !important;
+}
+
+.delay-500 {
+    transition-delay: 0.5s !important;
+}
+
+/* ========================================
+   PARALLAX EFFECTS
+   ======================================== */
+
+.parallax-slow {
+    will-change: transform;
+    transition: transform 0.1s linear;
+}
+
+/* ========================================
+   SMOOTH SECTIONS
+   ======================================== */
+
+section {
+    scroll-margin-top: 80px;
+}
+
+/* Smooth scroll for the whole page */
+html {
+    scroll-behavior: smooth;
+}

@@ -1,0 +1,2182 @@
+{
+  "items": [
+    {
+      "id": "60179199-8be1-4a77-b0c7-26399cf0bd73",
+      "patientId": "100237",
+      "name": "Kevin Adams",
+      "age": 60,
+      "gender": "Male",
+      "chiefComplaint": "The patient reports burning sensation in feet, numbness, and occasional tingling for the past 8\nmonths.",
+      "familyHistory": "Father with type 2 diabetes.",
+      "personalHistory": "Type 2 diabetes diagnosed at 52.",
+      "lifestyle": "Smoker, overweight, sedentary.",
+      "medications": "Metformin 1000 mg daily, Insulin (basal).",
+      "colonoscopy": "",
+      "stoolStudies": "",
+      "bloodTests": "Lab and Diagnostic Results:\nHbA1c: 8.7%.\nNerve Conduction Studies: Peripheral neuropathy confirmed.\nRenal Function: Mildly reduced eGFR.",
+      "vitals": "BP 142/88 mmHg, HR 88 bpm, BMI 31.4.",
+      "abdominalExam": "",
+      "status": "Completed",
+      "createdAt": "2025-11-15T04:05:58.111747",
+      "updatedAt": "2025-11-15T04:07:30.857239",
+      "agentResults": {
+        "specialists": {
+          "Internist": {
+            "specialist": "Internist",
+            "primary_assessment": "The patient presents with poorly controlled Type 2 Diabetes Mellitus, evidenced by elevated HbA1c, leading to established systemic complications including peripheral neuropathy and early renal impairment. Significant cardiovascular risk factors, including hypertension, obesity, and smoking, remain unaddressed.",
+            "overall_confidence": 95.0,
+            "key_findings": [
+              {
+                "summary": "Poorly controlled Type 2 Diabetes Mellitus, indicating inadequate systemic glycemic management.",
+                "quote": "HbA1c: 8.7%.",
+                "confidence": 98.0
+              },
+              {
+                "summary": "Established diabetic peripheral neuropathy, a common systemic complication of diabetes.",
+                "quote": "Peripheral neuropathy confirmed.",
+                "confidence": 95.0
+              },
+              {
+                "summary": "Evidence of early diabetic nephropathy or renal impairment, affecting systemic kidney function.",
+                "quote": "Mildly reduced eGFR.",
+                "confidence": 90.0
+              },
+              {
+                "summary": "Multiple unaddressed cardiovascular risk factors including hypertension, obesity, and lifestyle choices.",
+                "quote": "BP 142/88 mmHg, HR 88 bpm, BMI 31.4.",
+                "confidence": 92.0
+              }
+            ],
+            "contradictions": [],
+            "recommendations": [
+              "Intensify glycemic management to achieve target HbA1c, potentially adjusting Metformin and insulin regimen.",
+              "Initiate or optimize antihypertensive therapy to achieve blood pressure goals and reduce cardiovascular risk.",
+              "Implement comprehensive lifestyle modifications including smoking cessation, structured exercise, and dietary changes for weight management.",
+              "Monitor renal function closely and consider nephroprotective strategies, such as ACE inhibitors or ARBs, if appropriate."
+            ]
+          },
+          "Neurologist": {
+            "specialist": "Neurologist",
+            "primary_assessment": "Patient presents with symptomatic and objectively confirmed peripheral neuropathy, highly consistent with diabetic polyneuropathy given long-standing Type 2 Diabetes and poor glycemic control.",
+            "overall_confidence": 90.0,
+            "key_findings": [
+              {
+                "summary": "Patient reports classic sensory symptoms indicative of peripheral neuropathy.",
+                "quote": "burning sensation in feet, numbness, and occasional tingling",
+                "confidence": 95.0
+              },
+              {
+                "summary": "Nerve conduction studies objectively confirm the presence of peripheral neuropathy.",
+                "quote": "Nerve Conduction Studies: Peripheral neuropathy confirmed.",
+                "confidence": 100.0
+              },
+              {
+                "summary": "Poorly controlled Type 2 Diabetes is a significant etiological factor for neuropathy.",
+                "quote": "Type 2 diabetes diagnosed at 52. HbA1c: 8.7%.",
+                "confidence": 95.0
+              },
+              {
+                "summary": "Mild renal impairment may contribute to or exacerbate the neuropathy.",
+                "quote": "Renal Function: Mildly reduced eGFR.",
+                "confidence": 80.0
+              }
+            ],
+            "contradictions": [
+              {
+                "description": "A detailed neurological examination (e.g., reflexes, sensory mapping, motor strength, gait) is missing.",
+                "related_specialist": null,
+                "impact": "high"
+              },
+              {
+                "description": "The specific type or pattern of peripheral neuropathy (e.g., small fiber vs. large fiber, focal vs. diffuse) is not detailed from the NCS report.",
+                "related_specialist": null,
+                "impact": "medium"
+              },
+              {
+                "description": "No mention of screening for autonomic neuropathy or other common causes of neuropathy.",
+                "related_specialist": null,
+                "impact": "medium"
+              }
+            ],
+            "recommendations": [
+              "Perform a comprehensive neurological examination including sensory, motor, reflex, and gait assessment.",
+              "Consider further electrophysiological studies (e.g., quantitative sensory testing, autonomic testing) to characterize neuropathy.",
+              "Optimize glycemic control to prevent progression of diabetic neuropathy.",
+              "Initiate symptomatic management for neuropathic pain (e.g., gabapentin, pregabalin, duloxetine).",
+              "Screen for autonomic neuropathy, given the long-standing diabetes.",
+              "Evaluate for other potential causes of neuropathy (e.g., B12 deficiency, thyroid dysfunction, alcohol use)."
+            ]
+          },
+          "Cardiologist": {
+            "specialist": "Cardiologist",
+            "primary_assessment": "The patient, a 60-year-old male, presents with a significantly elevated cardiovascular risk profile due driven by poorly controlled type 2 diabetes, uncontrolled hypertension, obesity, smoking, and evidence of microvascular complications. A comprehensive cardiac evaluation is urgently warranted.",
+            "overall_confidence": 90.0,
+            "key_findings": [
+              {
+                "summary": "The patient exhibits a high cardiovascular risk profile due to multiple modifiable factors including smoking, obesity, and a sedentary lifestyle.",
+                "quote": "Smoker, overweight, sedentary... BP 142/88 mmHg, BMI 31.4.",
+                "confidence": 95.0
+              },
+              {
+                "summary": "Despite medication, the HbA1c of 8.7% indicates suboptimal glycemic control, significantly increasing cardiovascular risk.",
+                "quote": "Type 2 diabetes diagnosed at 52... HbA1c: 8.7%.",
+                "confidence": 90.0
+              },
+              {
+                "summary": "Evidence of diabetic microvascular complications, including peripheral neuropathy and mildly reduced eGFR, suggests long-standing poor control and increased macrovascular risk.",
+                "quote": "Peripheral neuropathy confirmed... Mildly reduced eGFR.",
+                "confidence": 85.0
+              },
+              {
+                "summary": "The patient's blood pressure of 142/88 mmHg indicates Stage 1 hypertension, a critical modifiable risk factor.",
+                "quote": "Vitals: BP 142/88 mmHg.",
+                "confidence": 90.0
+              }
+            ],
+            "contradictions": [
+              {
+                "description": "No information on cardiac structure, valvular function, or global systolic/diastolic function (e.g., echocardiogram results) is provided, limiting a complete cardiac assessment.",
+                "related_specialist": null,
+                "impact": "high"
+              },
+              {
+                "description": "A complete lipid profile (total cholesterol, LDL, HDL, triglycerides) is absent, which is essential for comprehensive cardiovascular risk stratification.",
+                "related_specialist": null,
+                "impact": "high"
+              },
+              {
+                "description": "No electrocardiogram (ECG) findings are available to assess cardiac rhythm, conduction abnormalities, or signs of ischemia.",
+                "related_specialist": null,
+                "impact": "medium"
+              }
+            ],
+            "recommendations": [
+              "Perform a comprehensive cardiovascular workup including an echocardiogram to assess cardiac structure and function, and an electrocardiogram (ECG) to evaluate rhythm and screen for ischemia.",
+              "Obtain a complete lipid panel (total cholesterol, LDL, HDL, triglycerides) to further stratify cardiovascular risk and guide lipid-lowering therapy.",
+              "Intensify lifestyle modifications focusing on smoking cessation, dietary changes for weight management, and a structured exercise program to address obesity, sedentary lifestyle, and improve glycemic and blood pressure control.",
+              "Optimize glycemic control to achieve an HbA1c target appropriate for the patient's age and comorbidities, in collaboration with an endocrinologist.",
+              "Initiate or adjust antihypertensive therapy to achieve blood pressure targets, considering the presence of diabetes and renal dysfunction."
+            ]
+          },
+          "Gastroenterologist": {
+            "specialist": "Gastroenterologist",
+            "primary_assessment": "The patient presents with uncontrolled Type 2 diabetes and significant risk factors for hepatobiliary and gastrointestinal complications, including obesity, sedentary lifestyle, and smoking. Direct GI symptoms or specific GI diagnostic findings are absent in this report.",
+            "overall_confidence": 70.0,
+            "key_findings": [
+              {
+                "summary": "Uncontrolled Type 2 Diabetes Mellitus, a significant risk factor for various GI and hepatobiliary complications.",
+                "quote": "Type 2 diabetes diagnosed at 52. HbA1c: 8.7%.",
+                "confidence": 95.0
+              },
+              {
+                "summary": "Presence of multiple risk factors for Non-Alcoholic Fatty Liver Disease (NAFLD) and potential Non-Alcoholic Steatohepatitis (NASH).",
+                "quote": "overweight, sedentary. BMI 31.4.",
+                "confidence": 90.0
+              },
+              {
+                "summary": "Active smoking, which significantly increases the risk for various gastrointestinal malignancies and other GI conditions.",
+                "quote": "Lifestyle: Smoker.",
+                "confidence": 95.0
+              }
+            ],
+            "contradictions": [
+              {
+                "description": "The chief complaint and primary findings focus on neurological symptoms (peripheral neuropathy) with no mention of any gastrointestinal symptoms (e.g., abdominal pain, nausea, changes in bowel habits, jaundice), which limits a comprehensive GI assessment.",
+                "related_specialist": "Neurologist",
+                "impact": "medium"
+              }
+            ],
+            "recommendations": [
+              "Order liver function tests (LFTs), fasting lipid panel, and consider abdominal ultrasound to screen for fatty liver disease (NAFLD/NASH) given the patient's risk factors.",
+              "Recommend aggressive dietary and lifestyle modifications, including weight management and increased physical activity, to improve glycemic control and mitigate hepatobiliary risks.",
+              "Strongly counsel on smoking cessation due to its association with increased risk of esophageal, gastric, and pancreatic cancers, as well as other GI pathologies.",
+              "Consider screening for GI complications associated with long-standing diabetes (e.g., gastroparesis, diabetic enteropathy) if any GI symptoms develop."
+            ]
+          },
+          "Psychiatrist": {
+            "specialist": "Psychiatrist",
+            "primary_assessment": "The patient presents with significant chronic medical conditions, including Type 2 Diabetes and peripheral neuropathy, accompanied by chronic pain symptoms. Adverse lifestyle factors are also noted. The report, however, completely lacks any assessment of mood, anxiety, cognitive function, or psychological well-being, which are critical considerations given the patient's medical profile and chronic symptoms.",
+            "overall_confidence": 60.0,
+            "key_findings": [
+              {
+                "summary": "Patient has a significant chronic medical condition.",
+                "quote": "Type 2 diabetes diagnosed at 52.",
+                "confidence": 90.0
+              },
+              {
+                "summary": "Patient reports chronic physical symptoms indicative of pain and discomfort.",
+                "quote": "burning sensation in feet, numbness, and occasional tingling",
+                "confidence": 85.0
+              },
+              {
+                "summary": "Patient exhibits elevated BMI and blood pressure, indicative of health risks.",
+                "quote": "BP 142/88 mmHg, HR 88 bpm, BMI 31.4.",
+                "confidence": 80.0
+              },
+              {
+                "summary": "Medical investigations confirm peripheral neuropathy, a source of chronic pain.",
+                "quote": "Nerve Conduction Studies: Peripheral neuropathy confirmed.",
+                "confidence": 95.0
+              }
+            ],
+            "contradictions": [
+              {
+                "description": "The report provides extensive medical details and findings but completely lacks any assessment of the patient's mood, anxiety, cognitive function, or psychological well-being, despite multiple risk factors for psychiatric comorbidity (chronic illness, chronic pain, adverse lifestyle).",
+                "related_specialist": null,
+                "impact": "high"
+              }
+            ],
+            "recommendations": [
+              "Conduct a comprehensive psychiatric evaluation, including screening for depression, anxiety, and adjustment disorder related to chronic illness and pain.",
+              "Assess the psychological impact of chronic pain and neuropathy on daily functioning, quality of life, and sleep.",
+              "Evaluate coping mechanisms and readiness for behavioral interventions for lifestyle modifications (e.g., smoking cessation, weight management, increased physical activity).",
+              "Consider cognitive screening given age, chronic diabetes, and potential for microvascular complications."
+            ]
+          }
+        },
+        "teamSummary": {
+          "overall_confidence": 97.0,
+          "diagnoses": [
+            {
+              "rank": 1,
+              "condition": "Poorly Controlled Type 2 Diabetes Mellitus with Systemic Complications",
+              "confidence": 98.0,
+              "primary_reason": "Patient presents with long-standing Type 2 Diabetes Mellitus (diagnosed at 52) with an HbA1c of 8.7%, indicating inadequate glycemic control. This has led to established microvascular complications including peripheral neuropathy and early renal impairment, and significantly contributes to a high cardiovascular risk profile.",
+              "specialist_support": [
+                {
+                  "specialist": "Internist",
+                  "confidence": 98.0,
+                  "evidence": "Poorly controlled Type 2 Diabetes Mellitus, indicating inadequate systemic glycemic management. HbA1c: 8.7%."
+                },
+                {
+                  "specialist": "Neurologist",
+                  "confidence": 95.0,
+                  "evidence": "Poorly controlled Type 2 Diabetes is a significant etiological factor for neuropathy. Type 2 diabetes diagnosed at 52. HbA1c: 8.7%."
+                },
+                {
+                  "specialist": "Cardiologist",
+                  "confidence": 90.0,
+                  "evidence": "Despite medication, the HbA1c of 8.7% indicates suboptimal glycemic control, significantly increasing cardiovascular risk."
+                },
+                {
+                  "specialist": "Gastroenterologist",
+                  "confidence": 95.0,
+                  "evidence": "Uncontrolled Type 2 Diabetes Mellitus, a significant risk factor for various GI and hepatobiliary complications."
+                }
+              ],
+              "contradictions": [],
+              "next_steps": [
+                "Intensify glycemic management to achieve target HbA1c, potentially adjusting Metformin and insulin regimen.",
+                "Implement comprehensive lifestyle modifications including smoking cessation, structured exercise, and dietary changes for weight management.",
+                "Monitor renal function closely and consider nephroprotective strategies.",
+                "Optimize antihypertensive therapy to achieve blood pressure goals."
+              ]
+            },
+            {
+              "rank": 2,
+              "condition": "Diabetic Peripheral Neuropathy",
+              "confidence": 99.0,
+              "primary_reason": "The patient's chief complaint of burning sensation, numbness, and tingling in the feet is consistent with peripheral neuropathy. This is objectively confirmed by Nerve Conduction Studies and is highly attributable to the long-standing and poorly controlled Type 2 Diabetes Mellitus.",
+              "specialist_support": [
+                {
+                  "specialist": "Neurologist",
+                  "confidence": 100.0,
+                  "evidence": "Nerve Conduction Studies: Peripheral neuropathy confirmed. Patient reports classic sensory symptoms indicative of peripheral neuropathy."
+                },
+                {
+                  "specialist": "Internist",
+                  "confidence": 95.0,
+                  "evidence": "Established diabetic peripheral neuropathy, a common systemic complication of diabetes."
+                },
+                {
+                  "specialist": "Cardiologist",
+                  "confidence": 85.0,
+                  "evidence": "Evidence of diabetic microvascular complications, including peripheral neuropathy..."
+                },
+                {
+                  "specialist": "Psychiatrist",
+                  "confidence": 95.0,
+                  "evidence": "Medical investigations confirm peripheral neuropathy, a source of chronic pain."
+                }
+              ],
+              "contradictions": [
+                {
+                  "description": "A detailed neurological examination (e.g., reflexes, sensory mapping, motor strength, gait) is missing.",
+                  "specialist": "Neurologist",
+                  "impact": "high"
+                },
+                {
+                  "description": "The specific type or pattern of peripheral neuropathy (e.g., small fiber vs. large fiber, focal vs. diffuse) is not detailed from the NCS report.",
+                  "specialist": "Neurologist",
+                  "impact": "medium"
+                },
+                {
+                  "description": "No mention of screening for autonomic neuropathy or other common causes of neuropathy.",
+                  "specialist": "Neurologist",
+                  "impact": "medium"
+                }
+              ],
+              "next_steps": [
+                "Perform a comprehensive neurological examination including sensory, motor, reflex, and gait assessment.",
+                "Consider further electrophysiological studies (e.g., quantitative sensory testing, autonomic testing) to characterize neuropathy.",
+                "Initiate symptomatic management for neuropathic pain (e.g., gabapentin, pregabalin, duloxetine).",
+                "Screen for autonomic neuropathy, given the long-standing diabetes.",
+                "Evaluate for other potential causes of neuropathy (e.g., B12 deficiency, thyroid dysfunction, alcohol use)."
+              ]
+            },
+            {
+              "rank": 3,
+              "condition": "High Cardiovascular Risk Profile with Stage 1 Hypertension",
+              "confidence": 95.0,
+              "primary_reason": "The patient presents with multiple unaddressed and modifiable cardiovascular risk factors, including poorly controlled Type 2 Diabetes, Stage 1 Hypertension (BP 142/88 mmHg), obesity (BMI 31.4), and active smoking. These factors collectively place the patient at significantly elevated risk for cardiovascular events.",
+              "specialist_support": [
+                {
+                  "specialist": "Cardiologist",
+                  "confidence": 95.0,
+                  "evidence": "The patient exhibits a high cardiovascular risk profile due to multiple modifiable factors including smoking, obesity, and a sedentary lifestyle. BP 142/88 mmHg, BMI 31.4."
+                },
+                {
+                  "specialist": "Internist",
+                  "confidence": 92.0,
+                  "evidence": "Multiple unaddressed cardiovascular risk factors including hypertension, obesity, and lifestyle choices. BP 142/88 mmHg, BMI 31.4."
+                },
+                {
+                  "specialist": "Cardiologist",
+                  "confidence": 90.0,
+                  "evidence": "The patient's blood pressure of 142/88 mmHg indicates Stage 1 hypertension, a critical modifiable risk factor."
+                }
+              ],
+              "contradictions": [
+                {
+                  "description": "No information on cardiac structure, valvular function, or global systolic/diastolic function (e.g., echocardiogram results) is provided, limiting a complete cardiac assessment.",
+                  "specialist": "Cardiologist",
+                  "impact": "high"
+                },
+                {
+                  "description": "A complete lipid profile (total cholesterol, LDL, HDL, triglycerides) is absent, which is essential for comprehensive cardiovascular risk stratification.",
+                  "specialist": "Cardiologist",
+                  "impact": "high"
+                },
+                {
+                  "description": "No electrocardiogram (ECG) findings are available to assess cardiac rhythm, conduction abnormalities, or signs of ischemia.",
+                  "specialist": "Cardiologist",
+                  "impact": "medium"
+                }
+              ],
+              "next_steps": [
+                "Perform a comprehensive cardiovascular workup including an echocardiogram and an electrocardiogram (ECG).",
+                "Obtain a complete lipid panel (total cholesterol, LDL, HDL, triglycerides) to further stratify cardiovascular risk.",
+                "Intensify lifestyle modifications focusing on smoking cessation, dietary changes for weight management, and a structured exercise program.",
+                "Initiate or adjust antihypertensive therapy to achieve blood pressure targets, considering the presence of diabetes and renal dysfunction."
+              ]
+            }
+          ],
+          "consensus_highlights": [
+            "The patient has poorly controlled Type 2 Diabetes Mellitus (HbA1c 8.7%) which is the central underlying condition.",
+            "Diabetic peripheral neuropathy is objectively confirmed and is the primary cause of the patient's chief complaint of burning, numbness, and tingling in the feet.",
+            "The patient carries a significantly elevated cardiovascular risk profile due to uncontrolled diabetes, hypertension, obesity, and active smoking.",
+            "Early renal impairment (mildly reduced eGFR) is present, likely a complication of long-standing diabetes.",
+            "Aggressive lifestyle modifications (smoking cessation, diet, exercise) are universally recommended across specialties to manage diabetes, cardiovascular risk, and other potential complications."
+          ],
+          "disagreement_notes": [
+            "There are no direct contradictions regarding the established medical findings. However, significant gaps in comprehensive assessment were identified by multiple specialists.",
+            "The Neurologist noted the absence of a detailed neurological examination and specific characterization of neuropathy, as well as lack of screening for autonomic neuropathy or other causes.",
+            "The Cardiologist highlighted the lack of information on cardiac structure/function (echocardiogram), a complete lipid profile, and ECG findings, which are crucial for a full cardiovascular assessment.",
+            "The Psychiatrist's report completely lacked any assessment of mood, anxiety, cognitive function, or psychological well-being, despite the patient's chronic illness and pain, indicating a major gap in holistic care.",
+            "The Gastroenterologist's assessment was limited by the absence of direct GI symptoms, leading to a lower overall confidence in their report's immediate clinical relevance."
+          ],
+          "specialist_confidence": {
+            "Internist": 95.0,
+            "Neurologist": 90.0,
+            "Cardiologist": 90.0,
+            "Gastroenterologist": 70.0,
+            "Psychiatrist": 60.0
+          }
+        },
+        "treatmentOptions": [
+          {
+            "option_number": 1,
+            "match_percentage": 95,
+            "primary_name": "Integrated Diabetes, Cardiovascular, and Neuropathy Management",
+            "overview": "A holistic, multidisciplinary program to achieve optimal glycemic control, reduce cardiovascular risk, manage neuropathic pain, and address systemic complications through intensive medical and lifestyle interventions.",
+            "modality": "Medical management, lifestyle modification, diagnostic evaluation, specialist consultations.",
+            "success_rate": 85,
+            "duration": "Long-term, ongoing",
+            "recovery_time": "N/A (ongoing management)",
+            "cost_estimate": "High (medications, frequent specialist visits, comprehensive diagnostics, lifestyle support programs)",
+            "side_effects": [
+              "Potential for hypoglycemia with intensified diabetes regimen",
+              "Medication side effects (e.g., GI upset from Metformin, dizziness from antihypertensives)",
+              "Challenges with adherence to intensive lifestyle changes"
+            ],
+            "recommended_for": [
+              "Patients with poorly controlled Type 2 Diabetes Mellitus (HbA1c 8.7%)",
+              "Established microvascular complications (diabetic peripheral neuropathy, early renal impairment)",
+              "High cardiovascular risk profile (hypertension, obesity, smoking)",
+              "Willingness to engage in comprehensive self-management and multidisciplinary care"
+            ],
+            "procedure_steps": [
+              "**Glycemic Optimization**: Intensify diabetes regimen (e.g., adjust Metformin, optimize insulin, consider GLP-1 RA/SGLT2i if appropriate for renal/cardiac benefits) to achieve target HbA1c.",
+              "**Cardiovascular Workup & Management**: Perform echocardiogram, ECG, and complete lipid panel. Optimize antihypertensive therapy to target BP <130/80 mmHg. Consider statin therapy.",
+              "**Neuropathy Management**: Initiate symptomatic neuropathic pain medication (e.g., gabapentin, pregabalin, duloxetine). Conduct comprehensive neurological exam and consider autonomic testing.",
+              "**Renal Protection**: Monitor eGFR/ACR closely. Consider ACEi/ARB if not already on, for nephroprotection.",
+              "**Aggressive Lifestyle Modification**: Enroll in structured smoking cessation program. Refer to registered dietitian for personalized meal plan for weight loss. Prescribe structured exercise program (e.g., 150 min moderate intensity/week).",
+              "**Psychological Support**: Conduct comprehensive psychiatric evaluation for mood, anxiety, coping, and readiness for change."
+            ],
+            "notes": [
+              "This option provides the most comprehensive and coordinated care, addressing all identified diagnoses and critical assessment gaps.",
+              "Requires significant patient engagement and multidisciplinary team collaboration for optimal outcomes."
+            ]
+          },
+          {
+            "option_number": 2,
+            "match_percentage": 85,
+            "primary_name": "Targeted Diabetes Control and Neuropathic Pain Relief",
+            "overview": "Focuses on immediate improvement of glycemic control to mitigate disease progression and provides symptomatic relief for the patient's chief complaint of peripheral neuropathy.",
+            "modality": "Medical management, pain management, lifestyle counseling.",
+            "success_rate": 80,
+            "duration": "Ongoing",
+            "recovery_time": "N/A",
+            "cost_estimate": "Moderate (medications, specialist visits, basic diagnostics)",
+            "side_effects": [
+              "Potential for hypoglycemia with intensified diabetes regimen",
+              "Medication side effects (e.g., somnolence with gabapentin)",
+              "Potential for weight gain with some diabetes medications"
+            ],
+            "recommended_for": [
+              "Patients prioritizing relief from neuropathic pain and immediate improvement in diabetes control",
+              "Individuals who may benefit from a more focused initial approach before broader interventions",
+              "Patients with confirmed diabetic peripheral neuropathy and poorly controlled Type 2 Diabetes"
+            ],
+            "procedure_steps": [
+              "**Glycemic Intensification**: Review and adjust current Metformin and insulin regimen to achieve a more aggressive HbA1c target.",
+              "**Neuropathic Pain Management**: Prescribe first-line medication for neuropathic pain (e.g., gabapentin or pregabalin) and titrate to effect.",
+              "**Neurology Assessment**: Perform detailed neurological examination (sensory, motor, reflexes, gait) and consider further electrophysiological studies to characterize neuropathy.",
+              "**Basic Lifestyle Counseling**: Reinforce smoking cessation and provide general advice on diet and exercise.",
+              "**Monitoring**: Regular monitoring of HbA1c, blood pressure, and renal function."
+            ],
+            "notes": [
+              "This option directly addresses the patient's most bothersome symptom and the underlying cause, offering quicker symptomatic relief and disease control.",
+              "While effective for primary concerns, it may not fully address all cardiovascular risks or diagnostic gaps identified by specialists."
+            ]
+          },
+          {
+            "option_number": 3,
+            "match_percentage": 75,
+            "primary_name": "Aggressive Cardiovascular Risk Reduction and Lifestyle Intervention",
+            "overview": "A program emphasizing the reduction of cardiovascular risk through comprehensive diagnostic evaluation, optimization of blood pressure and lipids, and intensive, structured lifestyle modifications.",
+            "modality": "Lifestyle modification, medical management, diagnostic evaluation.",
+            "success_rate": 70,
+            "duration": "Long-term",
+            "recovery_time": "N/A",
+            "cost_estimate": "Moderate (diagnostics, lifestyle support programs, medications)",
+            "side_effects": [
+              "Medication side effects (e.g., muscle pain from statins, orthostatic hypotension from antihypertensives)",
+              "Challenges with sustained lifestyle changes and adherence"
+            ],
+            "recommended_for": [
+              "Patients with multiple unaddressed cardiovascular risk factors (Stage 1 hypertension, obesity, active smoking)",
+              "Individuals motivated to make significant, sustained lifestyle changes to prevent future cardiovascular events",
+              "Patients with poorly controlled diabetes contributing to high cardiovascular risk"
+            ],
+            "procedure_steps": [
+              "**Comprehensive Cardiac Workup**: Perform echocardiogram, ECG, and complete lipid panel (total cholesterol, LDL, HDL, triglycerides).",
+              "**Antihypertensive Optimization**: Initiate or adjust antihypertensive therapy to achieve target blood pressure, considering agents with renal protective benefits.",
+              "**Lipid Management**: Initiate statin therapy based on risk stratification and lipid panel results.",
+              "**Intensive Lifestyle Program**: Enroll in a structured smoking cessation program. Refer to a registered dietitian for a personalized weight management plan. Develop a progressive exercise regimen.",
+              "**Screening for Complications**: Consider abdominal ultrasound to screen for NAFLD/NASH given obesity and diabetes.",
+              "**Psychological Support**: Assess readiness for change and provide support for adherence to lifestyle modifications."
+            ],
+            "notes": [
+              "This option is crucial for long-term health and prevention of major adverse cardiovascular events, which are a significant risk for this patient.",
+              "Requires substantial commitment to lifestyle changes for effectiveness and may not immediately address the patient's chief complaint of neuropathy."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "6496138a-bed0-4d65-98fc-e44378ae90bc",
+      "patientId": "100237",
+      "name": "Kevin Adams",
+      "age": 60,
+      "gender": "Male",
+      "chiefComplaint": "The patient reports burning sensation in feet, numbness, and occasional tingling for the past 8\nmonths.",
+      "familyHistory": "Father with type 2 diabetes.",
+      "personalHistory": "Type 2 diabetes diagnosed at 52.",
+      "lifestyle": "Smoker, overweight, sedentary.",
+      "medications": "Metformin 1000 mg daily, Insulin (basal).",
+      "colonoscopy": "",
+      "stoolStudies": "",
+      "bloodTests": "Lab and Diagnostic Results:\nHbA1c: 8.7%.\nNerve Conduction Studies: Peripheral neuropathy confirmed.\nRenal Function: Mildly reduced eGFR.",
+      "vitals": "BP 142/88 mmHg, HR 88 bpm, BMI 31.4.",
+      "abdominalExam": "",
+      "status": "Completed",
+      "createdAt": "2025-11-14T19:57:23.298461",
+      "updatedAt": "2025-11-14T19:58:55.455965",
+      "agentResults": {
+        "specialists": {
+          "Internist": {
+            "specialist": "Internist",
+            "primary_assessment": "The patient presents with poorly controlled Type 2 Diabetes Mellitus, evidenced by elevated HbA1c, and established microvascular complications including peripheral neuropathy and early renal impairment. Multiple unaddressed cardiovascular risk factors are also present.",
+            "overall_confidence": 95.0,
+            "key_findings": [
+              {
+                "summary": "Patient exhibits poor glycemic control despite current medication regimen, increasing risk of further complications.",
+                "quote": "HbA1c: 8.7%.",
+                "confidence": 100.0
+              },
+              {
+                "summary": "Confirmed peripheral neuropathy aligns with reported symptoms, indicating a significant diabetic microvascular complication.",
+                "quote": "Nerve Conduction Studies: Peripheral neuropathy confirmed.",
+                "confidence": 100.0
+              },
+              {
+                "summary": "Multiple cardiovascular risk factors, including hypertension, obesity, and smoking, are present and require systemic management.",
+                "quote": "BP 142/88 mmHg, HR 88 bpm, BMI 31.4. Smoker, overweight, sedentary.",
+                "confidence": 95.0
+              },
+              {
+                "summary": "Evidence of early renal impairment, likely diabetic nephropathy, necessitates further evaluation and management.",
+                "quote": "Renal Function: Mildly reduced eGFR.",
+                "confidence": 95.0
+              }
+            ],
+            "contradictions": [
+              {
+                "description": "The specific dosage and type of basal insulin are not detailed, which is crucial for optimizing glycemic control.",
+                "related_specialist": null,
+                "impact": "high"
+              },
+              {
+                "description": "A lipid panel is absent, which is essential for comprehensive cardiovascular risk stratification and management in diabetes.",
+                "related_specialist": null,
+                "impact": "high"
+              },
+              {
+                "description": "Urine albumin-to-creatinine ratio (UACR) is not provided, which is critical for staging and managing diabetic nephropathy.",
+                "related_specialist": null,
+                "impact": "high"
+              }
+            ],
+            "recommendations": [
+              "Intensify glycemic management to achieve target HbA1c, including a thorough review and adjustment of the insulin regimen.",
+              "Initiate comprehensive cardiovascular risk reduction strategies, focusing on blood pressure control and lipid management.",
+              "Further evaluate renal function with a urine albumin-to-creatinine ratio (UACR) and consider nephrology consultation.",
+              "Strongly advise and support smoking cessation, providing resources and pharmacotherapy as appropriate.",
+              "Recommend structured lifestyle modifications for weight management and increased physical activity."
+            ]
+          },
+          "Neurologist": {
+            "specialist": "Neurologist",
+            "primary_assessment": "60-year-old male presenting with chronic sensory symptoms consistent with peripheral neuropathy, objectively confirmed by nerve conduction studies. The most probable etiology is poorly controlled Type 2 diabetes, exacerbated by lifestyle factors.",
+            "overall_confidence": 90.0,
+            "key_findings": [
+              {
+                "summary": "Patient reports classic sensory symptoms indicative of peripheral neuropathy.",
+                "quote": "burning sensation in feet, numbness, and occasional tingling for the past 8 months.",
+                "confidence": 95.0
+              },
+              {
+                "summary": "Peripheral neuropathy is objectively confirmed by diagnostic nerve conduction studies.",
+                "quote": "Nerve Conduction Studies: Peripheral neuropathy confirmed.",
+                "confidence": 100.0
+              },
+              {
+                "summary": "Poorly controlled Type 2 diabetes is the most likely underlying cause of the neuropathy.",
+                "quote": "Type 2 diabetes diagnosed at 52. HbA1c: 8.7%.",
+                "confidence": 90.0
+              },
+              {
+                "summary": "Lifestyle factors and comorbidities contribute to the patient's overall health and neuropathy risk.",
+                "quote": "Smoker, overweight, sedentary. BMI 31.4.",
+                "confidence": 85.0
+              }
+            ],
+            "contradictions": [
+              {
+                "description": "Detailed neurological examination findings (e.g., specific sensory deficits, motor strength, reflexes, gait) are missing, which are crucial for comprehensive assessment.",
+                "related_specialist": "Neurologist",
+                "impact": "high"
+              },
+              {
+                "description": "Specifics of the Nerve Conduction Study results (e.g., affected nerves, type of involvement) are not provided.",
+                "related_specialist": "Neurologist",
+                "impact": "medium"
+              },
+              {
+                "description": "No mention of workup for other common causes of peripheral neuropathy beyond diabetes.",
+                "related_specialist": "Neurologist",
+                "impact": "medium"
+              }
+            ],
+            "recommendations": [
+              "Perform a comprehensive neurological examination, including detailed sensory, motor, reflex, and gait assessment.",
+              "Review the full Nerve Conduction Study and Electromyography (NCS/EMG) reports for specific findings.",
+              "Order further laboratory investigations to rule out other causes of neuropathy (e.g., B12, thyroid, autoimmune panel, paraproteinemia).",
+              "Recommend aggressive optimization of glycemic control and lifestyle modifications to slow neuropathy progression.",
+              "Initiate symptomatic management for neuropathic pain as needed."
+            ]
+          },
+          "Cardiologist": {
+            "specialist": "Cardiologist",
+            "primary_assessment": "The patient, a 60-year-old male, presents with a significantly elevated cardiovascular risk profile due driven by poorly controlled type 2 diabetes, uncontrolled hypertension, obesity, smoking, and evidence of microvascular complications. A comprehensive cardiac evaluation is urgently warranted.",
+            "overall_confidence": 90.0,
+            "key_findings": [
+              {
+                "summary": "The patient exhibits a high cardiovascular risk profile due to multiple modifiable factors including smoking, obesity, and a sedentary lifestyle.",
+                "quote": "Smoker, overweight, sedentary... BP 142/88 mmHg, BMI 31.4.",
+                "confidence": 95.0
+              },
+              {
+                "summary": "Despite medication, the HbA1c of 8.7% indicates suboptimal glycemic control, significantly increasing cardiovascular risk.",
+                "quote": "Type 2 diabetes diagnosed at 52... HbA1c: 8.7%.",
+                "confidence": 90.0
+              },
+              {
+                "summary": "Evidence of diabetic microvascular complications, including peripheral neuropathy and mildly reduced eGFR, suggests long-standing poor control and increased macrovascular risk.",
+                "quote": "Peripheral neuropathy confirmed... Mildly reduced eGFR.",
+                "confidence": 85.0
+              },
+              {
+                "summary": "The patient's blood pressure of 142/88 mmHg indicates Stage 1 hypertension, a critical modifiable risk factor.",
+                "quote": "Vitals: BP 142/88 mmHg.",
+                "confidence": 90.0
+              }
+            ],
+            "contradictions": [
+              {
+                "description": "No information on cardiac structure, valvular function, or global systolic/diastolic function (e.g., echocardiogram results) is provided, limiting a complete cardiac assessment.",
+                "related_specialist": null,
+                "impact": "high"
+              },
+              {
+                "description": "A complete lipid profile (total cholesterol, LDL, HDL, triglycerides) is absent, which is essential for comprehensive cardiovascular risk stratification.",
+                "related_specialist": null,
+                "impact": "high"
+              },
+              {
+                "description": "No electrocardiogram (ECG) findings are available to assess cardiac rhythm, conduction abnormalities, or signs of ischemia.",
+                "related_specialist": null,
+                "impact": "medium"
+              }
+            ],
+            "recommendations": [
+              "Perform a comprehensive cardiovascular workup including an echocardiogram to assess cardiac structure and function, and an electrocardiogram (ECG) to evaluate rhythm and screen for ischemia.",
+              "Obtain a complete lipid panel (total cholesterol, LDL, HDL, triglycerides) to further stratify cardiovascular risk and guide lipid-lowering therapy.",
+              "Intensify lifestyle modifications focusing on smoking cessation, dietary changes for weight management, and a structured exercise program to address obesity, sedentary lifestyle, and improve glycemic and blood pressure control.",
+              "Optimize glycemic control to achieve an HbA1c target appropriate for the patient's age and comorbidities, in collaboration with an endocrinologist.",
+              "Initiate or adjust antihypertensive therapy to achieve blood pressure targets, considering the presence of diabetes and renal dysfunction."
+            ]
+          },
+          "Psychiatrist": {
+            "specialist": "Psychiatrist",
+            "primary_assessment": "Initial psychiatric assessment indicates significant behavioral risk factors and the absence of mood, anxiety, or cognitive screening despite chronic medical conditions and pain. The patient's lifestyle choices and poorly controlled diabetes warrant further psychiatric evaluation.",
+            "overall_confidence": 85.0,
+            "key_findings": [
+              {
+                "summary": "Significant behavioral risk factors identified, including smoking, overweight status, and a sedentary lifestyle, which can impact mental and physical health.",
+                "quote": "Smoker, overweight, sedentary.",
+                "confidence": 95.0
+              },
+              {
+                "summary": "The report lacks any assessment of mood, anxiety, or cognitive function, despite the presence of chronic pain and poorly controlled diabetes.",
+                "quote": "burning sensation in feet, numbness, and occasional tingling for the past 8 months.",
+                "confidence": 90.0
+              },
+              {
+                "summary": "Poorly controlled diabetes (HbA1c 8.7%) poses a significant risk for cognitive impairment and increased psychological distress.",
+                "quote": "HbA1c: 8.7%.",
+                "confidence": 85.0
+              },
+              {
+                "summary": "No psychotropic medications are listed, suggesting an absence of current psychiatric treatment or prior psychiatric assessment.",
+                "quote": "Medications: Metformin 1000 mg daily, Insulin (basal).",
+                "confidence": 90.0
+              }
+            ],
+            "contradictions": [
+              {
+                "description": "The report details significant chronic medical conditions (diabetes, neuropathy, renal dysfunction) and chronic pain, which are strong risk factors for depression, anxiety, and cognitive issues, yet provides no information regarding the patient's mental state or cognitive function.",
+                "related_specialist": null,
+                "impact": "high"
+              }
+            ],
+            "recommendations": [
+              "Conduct a comprehensive psychiatric evaluation to assess for mood disorders (e.g., depression, anxiety), cognitive impairment, and psychological distress related to chronic illness and pain.",
+              "Explore behavioral factors (smoking, sedentary lifestyle, diet) within a motivational interviewing framework to identify barriers and facilitate health-promoting changes.",
+              "Assess for potential nicotine dependence and offer appropriate cessation support and pharmacotherapy.",
+              "Consider screening for sleep disturbances, which are common in chronic pain and diabetes and can significantly impact mood and cognition."
+            ]
+          },
+          "Gastroenterologist": {
+            "specialist": "Gastroenterologist",
+            "primary_assessment": "The patient presents with poorly controlled Type 2 diabetes and significant lifestyle risk factors including obesity and sedentary habits, which predispose to various gastrointestinal and hepatobiliary complications. Despite these factors, no specific gastrointestinal symptoms are reported, necessitating proactive screening and further evaluation.",
+            "overall_confidence": 85.0,
+            "key_findings": [
+              {
+                "summary": "Patient has long-standing Type 2 diabetes with evidence of poor glycemic control.",
+                "quote": "Type 2 diabetes diagnosed at 52. HbA1c: 8.7%.",
+                "confidence": 95.0
+              },
+              {
+                "summary": "Patient is overweight with a sedentary lifestyle, increasing metabolic and GI risks.",
+                "quote": "Lifestyle: overweight, sedentary. BMI 31.4.",
+                "confidence": 90.0
+              },
+              {
+                "summary": "Patient is currently managed with Metformin and basal Insulin for diabetes.",
+                "quote": "Medications: Metformin 1000 mg daily, Insulin (basal).",
+                "confidence": 90.0
+              },
+              {
+                "summary": "No specific gastrointestinal symptoms are documented in the chief complaint.",
+                "quote": "The patient reports burning sensation in feet, numbness, and occasional tingling.",
+                "confidence": 80.0
+              }
+            ],
+            "contradictions": [
+              {
+                "description": "Lack of reported specific gastrointestinal symptoms, liver function tests, pancreatic enzyme levels, or abdominal imaging to assess for common GI/hepatobiliary complications of diabetes and lifestyle.",
+                "related_specialist": null,
+                "impact": "high"
+              }
+            ],
+            "recommendations": [
+              "Screen for Non-Alcoholic Fatty Liver Disease (NAFLD) with liver function tests (LFTs) and abdominal ultrasound.",
+              "Assess for diabetic gastroparesis, especially given long-standing diabetes and confirmed peripheral neuropathy.",
+              "Counsel on smoking cessation and comprehensive lifestyle modifications (dietary changes, increased physical activity) to mitigate GI and hepatobiliary risks.",
+              "Consider screening for pancreatic exocrine insufficiency, a potential complication of long-standing diabetes."
+            ]
+          }
+        },
+        "teamSummary": {
+          "overall_confidence": 89.0,
+          "diagnoses": [
+            {
+              "rank": 1,
+              "condition": "Poorly Controlled Type 2 Diabetes Mellitus with Microvascular Complications",
+              "confidence": 98.0,
+              "primary_reason": "The patient exhibits an HbA1c of 8.7% despite current medication, indicating suboptimal glycemic control. This is directly linked to confirmed peripheral neuropathy and early renal impairment (mildly reduced eGFR), establishing significant microvascular complications.",
+              "specialist_support": [
+                {
+                  "specialist": "Internist",
+                  "confidence": 95.0,
+                  "evidence": "The patient presents with poorly controlled Type 2 Diabetes Mellitus, evidenced by elevated HbA1c, and established microvascular complications including peripheral neuropathy and early renal impairment."
+                },
+                {
+                  "specialist": "Neurologist",
+                  "confidence": 90.0,
+                  "evidence": "60-year-old male presenting with chronic sensory symptoms consistent with peripheral neuropathy, objectively confirmed by nerve conduction studies. The most probable etiology is poorly controlled Type 2 diabetes."
+                },
+                {
+                  "specialist": "Cardiologist",
+                  "confidence": 90.0,
+                  "evidence": "The patient... presents with a significantly elevated cardiovascular risk profile due driven by poorly controlled type 2 diabetes... and evidence of microvascular complications."
+                },
+                {
+                  "specialist": "Gastroenterologist",
+                  "confidence": 85.0,
+                  "evidence": "The patient presents with poorly controlled Type 2 diabetes... Patient has long-standing Type 2 diabetes with evidence of poor glycemic control. HbA1c: 8.7%."
+                },
+                {
+                  "specialist": "Psychiatrist",
+                  "confidence": 85.0,
+                  "evidence": "Poorly controlled diabetes (HbA1c 8.7%) poses a significant risk for cognitive impairment and increased psychological distress."
+                }
+              ],
+              "contradictions": [
+                {
+                  "description": "The specific dosage and type of basal insulin are not detailed, which is crucial for optimizing glycemic control.",
+                  "specialist": "Internist",
+                  "impact": "high"
+                },
+                {
+                  "description": "Urine albumin-to-creatinine ratio (UACR) is not provided, which is critical for staging and managing diabetic nephropathy.",
+                  "specialist": "Internist",
+                  "impact": "high"
+                },
+                {
+                  "description": "Specifics of the Nerve Conduction Study results (e.g., affected nerves, type of involvement) are not provided.",
+                  "specialist": "Neurologist",
+                  "impact": "medium"
+                },
+                {
+                  "description": "No mention of workup for other common causes of peripheral neuropathy beyond diabetes.",
+                  "specialist": "Neurologist",
+                  "impact": "medium"
+                }
+              ],
+              "next_steps": [
+                "Intensify glycemic management to achieve target HbA1c, including a thorough review and adjustment of the insulin regimen.",
+                "Further evaluate renal function with a urine albumin-to-creatinine ratio (UACR) and consider nephrology consultation.",
+                "Perform a comprehensive neurological examination, including detailed sensory, motor, reflex, and gait assessment.",
+                "Review the full Nerve Conduction Study and Electromyography (NCS/EMG) reports for specific findings.",
+                "Order further laboratory investigations to rule out other causes of neuropathy (e.g., B12, thyroid, autoimmune panel, paraproteinemia).",
+                "Initiate symptomatic management for neuropathic pain as needed."
+              ]
+            },
+            {
+              "rank": 2,
+              "condition": "High Cardiovascular Risk Profile",
+              "confidence": 95.0,
+              "primary_reason": "The patient presents with multiple unaddressed and modifiable cardiovascular risk factors including uncontrolled Stage 1 hypertension (BP 142/88 mmHg), obesity (BMI 31.4), active smoking, and a sedentary lifestyle, all compounded by poorly controlled Type 2 Diabetes.",
+              "specialist_support": [
+                {
+                  "specialist": "Cardiologist",
+                  "confidence": 90.0,
+                  "evidence": "The patient... presents with a significantly elevated cardiovascular risk profile due driven by poorly controlled type 2 diabetes, uncontrolled hypertension, obesity, smoking, and evidence of microvascular complications."
+                },
+                {
+                  "specialist": "Internist",
+                  "confidence": 95.0,
+                  "evidence": "Multiple unaddressed cardiovascular risk factors, including hypertension, obesity, and smoking, are present and require systemic management."
+                },
+                {
+                  "specialist": "Neurologist",
+                  "confidence": 85.0,
+                  "evidence": "Lifestyle factors and comorbidities contribute to the patient's overall health and neuropathy risk. Smoker, overweight, sedentary. BMI 31.4."
+                },
+                {
+                  "specialist": "Gastroenterologist",
+                  "confidence": 90.0,
+                  "evidence": "Patient is overweight with a sedentary lifestyle, increasing metabolic and GI risks."
+                },
+                {
+                  "specialist": "Psychiatrist",
+                  "confidence": 95.0,
+                  "evidence": "Significant behavioral risk factors identified, including smoking, overweight status, and a sedentary lifestyle, which can impact mental and physical health."
+                }
+              ],
+              "contradictions": [
+                {
+                  "description": "A lipid panel is absent, which is essential for comprehensive cardiovascular risk stratification and management in diabetes.",
+                  "specialist": "Internist",
+                  "impact": "high"
+                },
+                {
+                  "description": "No information on cardiac structure, valvular function, or global systolic/diastolic function (e.g., echocardiogram results) is provided, limiting a complete cardiac assessment.",
+                  "specialist": "Cardiologist",
+                  "impact": "high"
+                },
+                {
+                  "description": "A complete lipid profile (total cholesterol, LDL, HDL, triglycerides) is absent, which is essential for comprehensive cardiovascular risk stratification.",
+                  "specialist": "Cardiologist",
+                  "impact": "high"
+                },
+                {
+                  "description": "No electrocardiogram (ECG) findings are available to assess cardiac rhythm, conduction abnormalities, or signs of ischemia.",
+                  "specialist": "Cardiologist",
+                  "impact": "medium"
+                }
+              ],
+              "next_steps": [
+                "Initiate comprehensive cardiovascular risk reduction strategies, focusing on blood pressure control and lipid management.",
+                "Strongly advise and support smoking cessation, providing resources and pharmacotherapy as appropriate.",
+                "Recommend structured lifestyle modifications for weight management and increased physical activity.",
+                "Perform a comprehensive cardiovascular workup including an echocardiogram to assess cardiac structure and function, and an electrocardiogram (ECG) to evaluate rhythm and screen for ischemia.",
+                "Obtain a complete lipid panel (total cholesterol, LDL, HDL, triglycerides) to further stratify cardiovascular risk and guide lipid-lowering therapy.",
+                "Initiate or adjust antihypertensive therapy to achieve blood pressure targets, considering the presence of diabetes and renal dysfunction."
+              ]
+            },
+            {
+              "rank": 3,
+              "condition": "Unaddressed Behavioral/Psychological Factors and Potential GI/Hepatobiliary Complications",
+              "confidence": 88.0,
+              "primary_reason": "Despite significant chronic medical conditions, pain, and high-risk lifestyle factors (smoking, obesity, sedentary), there is a complete absence of screening or assessment for mood disorders, cognitive impairment, or common gastrointestinal/hepatobiliary complications associated with long-standing diabetes.",
+              "specialist_support": [
+                {
+                  "specialist": "Psychiatrist",
+                  "confidence": 85.0,
+                  "evidence": "Initial psychiatric assessment indicates significant behavioral risk factors and the absence of mood, anxiety, or cognitive screening despite chronic medical conditions and pain. The patient's lifestyle choices and poorly controlled diabetes warrant further psychiatric evaluation."
+                },
+                {
+                  "specialist": "Gastroenterologist",
+                  "confidence": 85.0,
+                  "evidence": "The patient presents with poorly controlled Type 2 diabetes and significant lifestyle risk factors including obesity and sedentary habits, which predispose to various gastrointestinal and hepatobiliary complications. Despite these factors, no specific gastrointestinal symptoms are reported, necessitating proactive screening and further evaluation."
+                },
+                {
+                  "specialist": "Internist",
+                  "confidence": 95.0,
+                  "evidence": "Multiple cardiovascular risk factors, including hypertension, obesity, and smoking, are present and require systemic management."
+                }
+              ],
+              "contradictions": [
+                {
+                  "description": "The report details significant chronic medical conditions (diabetes, neuropathy, renal dysfunction) and chronic pain, which are strong risk factors for depression, anxiety, and cognitive issues, yet provides no information regarding the patient's mental state or cognitive function.",
+                  "specialist": "Psychiatrist",
+                  "impact": "high"
+                },
+                {
+                  "description": "Lack of reported specific gastrointestinal symptoms, liver function tests, pancreatic enzyme levels, or abdominal imaging to assess for common GI/hepatobiliary complications of diabetes and lifestyle.",
+                  "specialist": "Gastroenterologist",
+                  "impact": "high"
+                }
+              ],
+              "next_steps": [
+                "Conduct a comprehensive psychiatric evaluation to assess for mood disorders (e.g., depression, anxiety), cognitive impairment, and psychological distress related to chronic illness and pain.",
+                "Explore behavioral factors (smoking, sedentary lifestyle, diet) within a motivational interviewing framework to identify barriers and facilitate health-promoting changes.",
+                "Assess for potential nicotine dependence and offer appropriate cessation support and pharmacotherapy.",
+                "Consider screening for sleep disturbances, which are common in chronic pain and diabetes and can significantly impact mood and cognition.",
+                "Screen for Non-Alcoholic Fatty Liver Disease (NAFLD) with liver function tests (LFTs) and abdominal ultrasound.",
+                "Assess for diabetic gastroparesis, especially given long-standing diabetes and confirmed peripheral neuropathy.",
+                "Consider screening for pancreatic exocrine insufficiency, a potential complication of long-standing diabetes."
+              ]
+            }
+          ],
+          "consensus_highlights": [
+            "There is universal agreement across all specialists regarding the patient's poorly controlled Type 2 Diabetes Mellitus, evidenced by an HbA1c of 8.7%.",
+            "All specialists acknowledge the presence of significant microvascular complications, specifically peripheral neuropathy and early renal impairment, as direct consequences of long-standing diabetes.",
+            "A strong consensus exists on the patient's high cardiovascular risk profile, driven by uncontrolled hypertension, obesity, active smoking, and a sedentary lifestyle.",
+            "All reports emphasize the critical need for aggressive lifestyle modifications, including smoking cessation, weight management, and increased physical activity, to improve overall health outcomes.",
+            "Multiple specialists highlight significant gaps in the current diagnostic workup, including the absence of a lipid panel, UACR, detailed cardiac imaging, comprehensive neurological examination findings, and any assessment of mental health or gastrointestinal complications."
+          ],
+          "disagreement_notes": [
+            "No direct contradictions or disagreements on existing findings were identified among the specialists. Instead, the 'contradictions' section primarily reflects critical gaps in the available data and assessments, which each specialist points out from their respective domain.",
+            "The primary 'disagreement' lies in the *scope* of unaddressed issues, with the Psychiatrist and Gastroenterologist highlighting entirely uninvestigated domains (mental health, GI/hepatobiliary complications) that are crucial given the patient's chronic conditions and risk factors, which were not explicitly mentioned by other specialists."
+          ],
+          "specialist_confidence": {
+            "Internist": 95.0,
+            "Neurologist": 90.0,
+            "Cardiologist": 90.0,
+            "Gastroenterologist": 85.0,
+            "Psychiatrist": 85.0
+          }
+        },
+        "treatmentOptions": [
+          {
+            "option_number": 1,
+            "match_percentage": 95,
+            "primary_name": "Integrated Intensive Glycemic & Cardiovascular Risk Management",
+            "overview": "This option focuses on immediate and aggressive optimization of glycemic control and comprehensive cardiovascular risk reduction, coupled with robust lifestyle interventions. It addresses the core issues of poorly controlled diabetes, hypertension, obesity, and smoking.",
+            "modality": "Medical management, lifestyle modification, diagnostic workup",
+            "success_rate": 85,
+            "duration": "Ongoing",
+            "recovery_time": "N/A (ongoing management)",
+            "cost_estimate": "Moderate to High (medications, specialist visits, diagnostic tests, lifestyle support)",
+            "side_effects": [
+              "Hypoglycemia (insulin adjustment)",
+              "Medication side effects (antihypertensives, lipid-lowering)",
+              "Lifestyle change challenges"
+            ],
+            "recommended_for": [
+              "Poorly Controlled Type 2 Diabetes Mellitus with Microvascular Complications",
+              "High Cardiovascular Risk Profile"
+            ],
+            "procedure_steps": [
+              "Thorough review and adjustment of insulin regimen and other diabetes medications to achieve target HbA1c.",
+              "Initiate/adjust antihypertensive therapy to achieve blood pressure targets.",
+              "Obtain complete lipid panel and initiate lipid-lowering therapy (e.g., statin) as indicated.",
+              "Strongly advise and support smoking cessation (pharmacotherapy, counseling).",
+              "Structured dietary counseling and exercise program for weight management (BMI 31.4) and increased physical activity.",
+              "Order Urine Albumin-to-Creatinine Ratio (UACR) for renal function staging.",
+              "Perform comprehensive cardiovascular workup including an ECG and echocardiogram."
+            ],
+            "notes": [
+              "This option directly addresses the top two diagnoses and many of the immediate diagnostic gaps identified by Internist and Cardiologist, forming the cornerstone of management."
+            ]
+          },
+          {
+            "option_number": 2,
+            "match_percentage": 90,
+            "primary_name": "Comprehensive Diagnostic Workup and Specialist Consultations",
+            "overview": "This option prioritizes filling the significant diagnostic gaps identified by all specialists, ensuring a complete understanding of the extent of microvascular, cardiovascular, and potential GI/psychiatric complications before further treatment intensification.",
+            "modality": "Diagnostic procedures, specialist referrals",
+            "success_rate": 90,
+            "duration": "Weeks to months (depending on scheduling and test results)",
+            "recovery_time": "Minimal (diagnostic tests)",
+            "cost_estimate": "High (multiple tests, specialist visits)",
+            "side_effects": [
+              "Minor risks associated with diagnostic procedures (e.g., blood draws, imaging contrast)"
+            ],
+            "recommended_for": [
+              "Poorly Controlled Type 2 Diabetes Mellitus with Microvascular Complications",
+              "High Cardiovascular Risk Profile",
+              "Unaddressed Behavioral/Psychological Factors and Potential GI/Hepatobiliary Complications"
+            ],
+            "procedure_steps": [
+              "Obtain complete lipid panel, Urine Albumin-to-Creatinine Ratio (UACR), and detailed Liver Function Tests (LFTs).",
+              "Perform comprehensive neurological examination, review full Nerve Conduction Study (NCS)/Electromyography (EMG) reports, and order further investigations to rule out other causes of neuropathy (e.g., B12, thyroid, autoimmune panel, paraproteinemia).",
+              "Perform comprehensive cardiovascular workup including an echocardiogram to assess cardiac structure and function, and an electrocardiogram (ECG).",
+              "Conduct comprehensive psychiatric evaluation to assess for mood disorders, cognitive impairment, and psychological distress.",
+              "Screen for Non-Alcoholic Fatty Liver Disease (NAFLD) with abdominal ultrasound, assess for diabetic gastroparesis, and consider screening for pancreatic exocrine insufficiency.",
+              "Referrals to Nephrology, Neurology, Cardiology, Psychiatry, and Gastroenterology based on initial findings."
+            ],
+            "notes": [
+              "This option is crucial for establishing a comprehensive baseline, addressing all identified diagnostic gaps, and guiding future targeted therapies across all domains."
+            ]
+          },
+          {
+            "option_number": 3,
+            "match_percentage": 85,
+            "primary_name": "Holistic Management of Complications and Behavioral Health",
+            "overview": "This option focuses on managing existing complications (neuropathy, early renal impairment) and proactively addressing unaddressed behavioral and psychological factors, as well as potential GI/hepatobiliary issues, in conjunction with ongoing medical management.",
+            "modality": "Symptomatic management, behavioral therapy, specialist support, screening",
+            "success_rate": 75,
+            "duration": "Ongoing",
+            "recovery_time": "N/A (ongoing management)",
+            "cost_estimate": "Moderate (medications, therapy, screening tests)",
+            "side_effects": [
+              "Medication side effects for pain",
+              "Challenges with behavioral changes",
+              "Potential psychological distress during therapy"
+            ],
+            "recommended_for": [
+              "Poorly Controlled Type 2 Diabetes Mellitus with Microvascular Complications",
+              "Unaddressed Behavioral/Psychological Factors and Potential GI/Hepatobiliary Complications"
+            ],
+            "procedure_steps": [
+              "Initiate symptomatic management for neuropathic pain (e.g., gabapentin, pregabalin, duloxetine).",
+              "Conduct comprehensive psychiatric evaluation for mood disorders (depression, anxiety), cognitive impairment, and psychological distress related to chronic illness and pain.",
+              "Implement motivational interviewing and provide resources for smoking cessation, weight management, and increased physical activity.",
+              "Screen for sleep disturbances and address as appropriate.",
+              "Screen for Non-Alcoholic Fatty Liver Disease (NAFLD) with Liver Function Tests (LFTs) and abdominal ultrasound.",
+              "Assess for diabetic gastroparesis and consider screening for pancreatic exocrine insufficiency.",
+              "Ongoing collaboration with primary care, endocrinology, and other specialists for integrated care."
+            ],
+            "notes": [
+              "This option emphasizes patient-centered care, addressing quality of life, mental well-being, and long-term health maintenance, particularly for the less-addressed but significant aspects of the patient's condition."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "77778498-baef-4904-a757-c4c80fc26a47",
+      "patientId": "200145",
+      "name": "Robert Simmons",
+      "age": 58,
+      "gender": "Male",
+      "chiefComplaint": "The patient presents with chest pain, shortness of breath, and fatigue that has worsened\nover the past month.",
+      "familyHistory": "Father with history of myocardial infarction at age 65.",
+      "personalHistory": "Hypertension for 10 years, Type 2 Diabetes Mellitus for 5\nyears.",
+      "lifestyle": "Sedentary lifestyle, former smoker (quit 3 years ago), occasional\nconsumption of fatty foods.",
+      "medications": "Metformin, Lisinopril, Atorvastatin.",
+      "colonoscopy": "",
+      "stoolStudies": "",
+      "bloodTests": "Lab and Diagnostic Results:\n\u2022 ECG: ST-segment depression in leads V5-V6.\n\u2022 Echocardiogram: Left ventricular ejection fraction 45%.\n\u2022 Cardiac Enzymes: Troponin mildly elevated.\n\u2022 Lipid Profile: LDL 142 mg/dL, HDL 35 mg/dL, Triglycerides 190 mg/dL.",
+      "vitals": "BP 142/86 mmHg, HR 82 bpm, BMI 28.0",
+      "abdominalExam": "",
+      "status": "Completed",
+      "createdAt": "2025-11-15T04:00:29.210083",
+      "updatedAt": "2025-11-15T04:03:30.555609",
+      "agentResults": {
+        "specialists": {
+          "Internist": null,
+          "Neurologist": {
+            "specialist": "Neurologist",
+            "primary_assessment": "The patient's neurological status cannot be adequately assessed from the provided report due to a complete absence of neurological examination findings. However, significant risk factors for cerebrovascular disease and peripheral neuropathy are present.",
+            "overall_confidence": 85.0,
+            "key_findings": [
+              {
+                "summary": "Patient has significant risk factors for cerebrovascular disease and peripheral neuropathy.",
+                "quote": "Hypertension for 10 years, Type 2 Diabetes Mellitus for 5 years.",
+                "confidence": 95.0
+              },
+              {
+                "summary": "The report lacks any specific neurological examination or assessment details.",
+                "quote": "LABORATORY & EXAMINATION section lists only cardiac and metabolic data.",
+                "confidence": 90.0
+              },
+              {
+                "summary": "The chief complaint of fatigue is not explored from a neurological perspective.",
+                "quote": "The patient presents with chest pain, shortness of breath, and fatigue.",
+                "confidence": 75.0
+              }
+            ],
+            "contradictions": [],
+            "recommendations": [
+              "Conduct a comprehensive neurological examination, including cranial nerves, motor, sensory, reflexes, coordination, and gait.",
+              "Perform a detailed cognitive assessment to screen for vascular cognitive impairment.",
+              "Evaluate for peripheral neuropathy, given the history of Type 2 Diabetes Mellitus.",
+              "Consider brain imaging (e.g., MRI brain) to assess for cerebrovascular disease or silent infarcts."
+            ]
+          },
+          "Cardiologist": {
+            "specialist": "Cardiologist",
+            "primary_assessment": "Mr. Simmons presents with classic symptoms of acute coronary syndrome, supported by objective evidence of myocardial ischemia (ECG changes), myocardial injury (elevated troponin), and significant left ventricular systolic dysfunction. He carries a very high cardiovascular risk profile due to multiple uncontrolled comorbidities and lifestyle factors.",
+            "overall_confidence": 95.0,
+            "key_findings": [
+              {
+                "summary": "The patient exhibits moderate left ventricular systolic dysfunction.",
+                "quote": "Left ventricular ejection fraction 45%.",
+                "confidence": 100.0
+              },
+              {
+                "summary": "ECG findings are highly suggestive of ongoing myocardial ischemia.",
+                "quote": "ECG: ST-segment depression in leads V5-V6.",
+                "confidence": 95.0
+              },
+              {
+                "summary": "There is biochemical evidence of myocardial injury.",
+                "quote": "Cardiac Enzymes: Troponin mildly elevated.",
+                "confidence": 95.0
+              },
+              {
+                "summary": "The patient has a high cardiovascular risk profile due to multiple comorbidities and lifestyle factors.",
+                "quote": "Hypertension for 10 years, Type 2 Diabetes Mellitus for 5 years.",
+                "confidence": 100.0
+              }
+            ],
+            "contradictions": [
+              {
+                "description": "The specific value and trend of the mildly elevated troponin are not provided, which is crucial for assessing the acuity and severity of myocardial injury and guiding immediate management.",
+                "related_specialist": null,
+                "impact": "high"
+              }
+            ],
+            "recommendations": [
+              "Urgent evaluation for acute coronary syndrome, including serial cardiac biomarkers and consideration for coronary angiography.",
+              "Initiation and optimization of guideline-directed medical therapy for heart failure with reduced ejection fraction (HFrEF).",
+              "Comprehensive risk factor modification, focusing on blood pressure control, lipid management, and lifestyle interventions."
+            ]
+          },
+          "Gastroenterologist": {
+            "specialist": "Gastroenterologist",
+            "primary_assessment": "Patient exhibits multiple metabolic risk factors (Type 2 Diabetes, dyslipidemia, overweight) predisposing to Non-Alcoholic Fatty Liver Disease (NAFLD), gallstones, and pancreatitis. GI assessment is significantly limited by the absence of reported GI symptoms or specific GI investigations.",
+            "overall_confidence": 70.0,
+            "key_findings": [
+              {
+                "summary": "Significant risk factors for Non-Alcoholic Fatty Liver Disease (NAFLD).",
+                "quote": "Type 2 Diabetes, dyslipidemia, overweight (BMI 28.0), and occasional fatty foods.",
+                "confidence": 95.0
+              },
+              {
+                "summary": "Increased risk for pancreatitis due to metabolic factors.",
+                "quote": "Type 2 Diabetes, Triglycerides 190 mg/dL, and BMI 28.0.",
+                "confidence": 85.0
+              },
+              {
+                "summary": "Potential for medication-related gastrointestinal side effects.",
+                "quote": "Medications: Metformin, Lisinopril, Atorvastatin.",
+                "confidence": 75.0
+              },
+              {
+                "summary": "Absence of specific gastrointestinal symptoms or investigations in the report.",
+                "quote": "Patient presents with chest pain, shortness of breath, and fatigue.",
+                "confidence": 100.0
+              }
+            ],
+            "contradictions": [
+              {
+                "description": "The report lacks any specific gastrointestinal symptoms, physical examination findings, or laboratory/imaging investigations relevant to the GI tract, liver, or pancreas, despite multiple metabolic risk factors.",
+                "related_specialist": null,
+                "impact": "high"
+              }
+            ],
+            "recommendations": [
+              "Order liver function tests (LFTs) and an abdominal ultrasound to screen for NAFLD and gallstones.",
+              "Counsel patient on lifestyle modifications, including dietary changes to reduce fatty food intake and increase physical activity, for weight management and metabolic control.",
+              "Discuss potential gastrointestinal side effects of current medications, especially Metformin, with the patient.",
+              "Monitor for symptoms suggestive of pancreatitis and consider amylase/lipase if clinically indicated."
+            ]
+          },
+          "Psychiatrist": {
+            "specialist": "Psychiatrist",
+            "primary_assessment": "The provided medical report primarily details physical symptoms and medical history, lacking direct psychiatric assessment. However, several factors such as chronic medical conditions, reported fatigue, and lifestyle behaviors indicate a high need for a comprehensive psychiatric evaluation to screen for mood, anxiety, and cognitive disorders, and to assess the psychosocial impact of his health status.",
+            "overall_confidence": 40.0,
+            "key_findings": [
+              {
+                "summary": "The patient reports fatigue, a non-specific symptom that frequently co-occurs with or can be indicative of underlying mood disorders, warranting further psychiatric exploration.",
+                "quote": "fatigue that has worsened over the past month.",
+                "confidence": 70.0
+              },
+              {
+                "summary": "Significant behavioral health factors are present, including a sedentary lifestyle and dietary habits, which can negatively impact both physical and mental well-being and adherence to treatment.",
+                "quote": "Sedentary lifestyle, former smoker... occasional consumption of fatty foods.",
+                "confidence": 90.0
+              },
+              {
+                "summary": "The patient's multiple chronic medical conditions (hypertension, Type 2 Diabetes Mellitus, and emerging cardiac issues) are well-established risk factors for developing mood and anxiety disorders.",
+                "quote": "Hypertension for 10 years, Type 2 Diabetes Mellitus for 5 years.",
+                "confidence": 95.0
+              },
+              {
+                "summary": "No psychotropic medications are listed among the patient's current prescriptions, indicating an absence of current psychiatric treatment despite significant medical comorbidities and potential psychiatric symptoms.",
+                "quote": "Medications: Metformin, Lisinopril, Atorvastatin.",
+                "confidence": 85.0
+              }
+            ],
+            "contradictions": [],
+            "recommendations": [
+              "Conduct a comprehensive psychiatric evaluation, including screening for depression, anxiety, and cognitive impairment.",
+              "Assess the patient's coping mechanisms, stress levels, and adherence to medical regimens, particularly regarding lifestyle modifications.",
+              "Explore the psychosocial impact of chronic illness and lifestyle factors on the patient's mental well-being and quality of life.",
+              "Consider psychoeducation and behavioral interventions to support lifestyle changes and improve overall mental health."
+            ]
+          }
+        },
+        "teamSummary": null,
+        "treatmentOptions": null
+      }
+    },
+    {
+      "id": "a469631b-453c-4f51-baad-378527adcb2a",
+      "patientId": "100237",
+      "name": "Raheel Maqbool",
+      "age": 60,
+      "gender": "Male",
+      "chiefComplaint": "The patient reports burning sensation in feet, numbness, and occasional tingling for the past 8\nmonths.",
+      "familyHistory": "Father with type 2 diabetes.",
+      "personalHistory": "Type 2 diabetes diagnosed at 52.",
+      "lifestyle": "Smoker, overweight, sedentary.",
+      "medications": "Metformin 1000 mg daily, Insulin (basal).",
+      "colonoscopy": "",
+      "stoolStudies": "",
+      "bloodTests": "Lab and Diagnostic Results:\nHbA1c: 8.7%.\nNerve Conduction Studies: Peripheral neuropathy confirmed.\nRenal Function: Mildly reduced eGFR.",
+      "vitals": "BP 142/88 mmHg, HR 88 bpm, BMI 31.4.",
+      "abdominalExam": "",
+      "status": "Completed",
+      "createdAt": "2025-11-15T07:06:12.487464",
+      "updatedAt": "2025-11-15T07:25:49.207397",
+      "agentResults": {
+        "specialists": {
+          "Internist": {
+            "specialist": "Internist",
+            "primary_assessment": "The patient presents with poorly controlled Type 2 diabetes, evidenced by elevated HbA1c, leading to systemic microvascular complications including confirmed peripheral neuropathy and early renal impairment. Multiple unaddressed cardiovascular risk factors, such as hypertension, obesity, and adverse lifestyle choices, further compound the systemic risk profile.",
+            "overall_confidence": 95.0,
+            "key_findings": [
+              {
+                "summary": "Patient exhibits poor glycemic control despite current medication regimen, indicating a need for intensified diabetes management.",
+                "quote": "Lab and Diagnostic Results: HbA1c: 8.7%.",
+                "confidence": 100.0
+              },
+              {
+                "summary": "Patient presents with classic neuropathic symptoms confirmed by diagnostic studies, consistent with diabetic peripheral neuropathy.",
+                "quote": "Nerve Conduction Studies: Peripheral neuropathy confirmed.",
+                "confidence": 95.0
+              },
+              {
+                "summary": "Patient shows signs of early renal impairment, likely a complication of long-standing diabetes.",
+                "quote": "Renal Function: Mildly reduced eGFR.",
+                "confidence": 90.0
+              },
+              {
+                "summary": "Multiple unaddressed cardiovascular risk factors, including hypertension, obesity, and adverse lifestyle, increase systemic disease burden.",
+                "quote": "Vitals: BP 142/88 mmHg, HR 88 bpm, BMI 31.4.",
+                "confidence": 90.0
+              }
+            ],
+            "contradictions": [],
+            "recommendations": [
+              "Intensify current diabetes management to achieve optimal glycemic control and prevent further complications.",
+              "Initiate or optimize antihypertensive therapy to manage elevated blood pressure and reduce cardiovascular risk.",
+              "Implement a comprehensive lifestyle modification program focusing on smoking cessation, weight reduction, and increased physical activity.",
+              "Further evaluate renal function and consider nephroprotective strategies, such as ACE inhibitors or ARBs, given the reduced eGFR."
+            ]
+          },
+          "Neurologist": {
+            "specialist": "Neurologist",
+            "primary_assessment": "The patient presents with symptomatic peripheral neuropathy, objectively confirmed by Nerve Conduction Studies, highly consistent with diabetic neuropathy given the history of poorly controlled Type 2 diabetes.",
+            "overall_confidence": 95.0,
+            "key_findings": [
+              {
+                "summary": "Patient reports classic sensory symptoms indicative of peripheral neuropathy.",
+                "quote": "burning sensation in feet, numbness, and occasional tingling for the past 8 months.",
+                "confidence": 95.0
+              },
+              {
+                "summary": "Peripheral neuropathy is objectively confirmed by electrodiagnostic studies.",
+                "quote": "Nerve Conduction Studies: Peripheral neuropathy confirmed.",
+                "confidence": 100.0
+              },
+              {
+                "summary": "Long-standing Type 2 diabetes is the primary and most probable underlying cause.",
+                "quote": "Type 2 diabetes diagnosed at 52.",
+                "confidence": 90.0
+              }
+            ],
+            "contradictions": [
+              {
+                "description": "Detailed neurological examination findings (sensory, motor, reflexes, cranial nerves) are missing, which are crucial for a comprehensive neurological assessment.",
+                "related_specialist": "Neurologist",
+                "impact": "high"
+              },
+              {
+                "description": "Specific characteristics of the neuropathy from Nerve Conduction Studies (e.g., axonal vs. demyelinating, small vs. large fiber involvement, severity) are not provided.",
+                "related_specialist": "Neurologist",
+                "impact": "medium"
+              },
+              {
+                "description": "Workup for other common causes of neuropathy (e.g., Vitamin B12 deficiency, thyroid dysfunction, autoimmune markers) is not documented.",
+                "related_specialist": "Neurologist",
+                "impact": "medium"
+              }
+            ],
+            "recommendations": [
+              "Perform a comprehensive neurological examination, including detailed sensory, motor, and reflex testing.",
+              "Review the full Nerve Conduction Study and EMG report for specific neuropathy characteristics (e.g., axonal vs. demyelinating, severity).",
+              "Order laboratory tests to rule out other treatable causes of neuropathy (e.g., Vitamin B12, thyroid function tests, autoimmune panel).",
+              "Collaborate with endocrinology to optimize glycemic control (HbA1c target) and manage diabetes-related complications.",
+              "Initiate symptomatic management for neuropathic pain, considering appropriate pharmacological agents."
+            ]
+          },
+          "Cardiologist": {
+            "specialist": "Cardiologist",
+            "primary_assessment": "The patient presents with a significantly elevated cardiovascular risk profile due to poorly controlled type 2 diabetes, hypertension, obesity, smoking, sedentary lifestyle, and chronic kidney disease. There is evidence of systemic microvascular complications, necessitating urgent comprehensive cardiac evaluation and aggressive risk factor modification.",
+            "overall_confidence": 90.0,
+            "key_findings": [
+              {
+                "summary": "The patient exhibits a very high cardiovascular risk profile, driven by multiple unmanaged or poorly controlled factors.",
+                "quote": "Smoker, overweight, sedentary. BP 142/88 mmHg, HbA1c: 8.7%, BMI 31.4.",
+                "confidence": 95.0
+              },
+              {
+                "summary": "Evidence of systemic microvascular complications is present, indicated by peripheral neuropathy and renal impairment.",
+                "quote": "Peripheral neuropathy confirmed. Renal Function: Mildly reduced eGFR.",
+                "confidence": 90.0
+              },
+              {
+                "summary": "Several vital signs are outside optimal ranges, including elevated blood pressure, borderline tachycardia, and obesity.",
+                "quote": "BP 142/88 mmHg, HR 88 bpm, BMI 31.4.",
+                "confidence": 90.0
+              }
+            ],
+            "contradictions": [
+              {
+                "description": "No echocardiogram or other cardiac imaging provided to assess heart structure and function (e.g., left ventricular hypertrophy, ejection fraction).",
+                "related_specialist": null,
+                "impact": "high"
+              },
+              {
+                "description": "An electrocardiogram (ECG) is not available to evaluate cardiac rhythm, conduction abnormalities, or signs of ischemia.",
+                "related_specialist": null,
+                "impact": "medium"
+              },
+              {
+                "description": "No specific tests (e.g., stress test) have been performed to assess myocardial perfusion for coronary artery disease.",
+                "related_specialist": null,
+                "impact": "high"
+              }
+            ],
+            "recommendations": [
+              "Initiate aggressive management of hypertension and diabetes, aiming for guideline-recommended targets (e.g., BP <130/80 mmHg, HbA1c <7%).",
+              "Strongly recommend comprehensive lifestyle modifications, including smoking cessation, dietary changes, and a structured exercise program.",
+              "Perform a comprehensive cardiac workup, including an echocardiogram, 12-lead ECG, and consider a stress test for myocardial ischemia.",
+              "Consider initiation of statin therapy and aspirin (if not contraindicated) for primary cardiovascular prevention, given the high-risk profile."
+            ]
+          },
+          "Gastroenterologist": {
+            "specialist": "Gastroenterologist",
+            "primary_assessment": "Patient presents with significant risk factors for gastrointestinal and hepatobiliary complications, including obesity, poorly controlled type 2 diabetes, and smoking, compounded by confirmed peripheral neuropathy suggesting potential autonomic involvement.",
+            "overall_confidence": 85.0,
+            "key_findings": [
+              {
+                "summary": "Obesity and unhealthy lifestyle factors increase GI and hepatobiliary risk.",
+                "quote": "Lifestyle: Smoker, overweight, sedentary. Vitals: BMI 31.4.",
+                "confidence": 95.0
+              },
+              {
+                "summary": "Poorly controlled Type 2 Diabetes poses significant risk for various GI complications.",
+                "quote": "Type 2 diabetes diagnosed at 52. HbA1c: 8.7%.",
+                "confidence": 95.0
+              },
+              {
+                "summary": "Confirmed peripheral neuropathy suggests potential autonomic nervous system involvement affecting GI motility.",
+                "quote": "Nerve Conduction Studies: Peripheral neuropathy confirmed.",
+                "confidence": 85.0
+              },
+              {
+                "summary": "Current Metformin use may contribute to gastrointestinal side effects.",
+                "quote": "Medications: Metformin 1000 mg daily.",
+                "confidence": 80.0
+              }
+            ],
+            "contradictions": [
+              {
+                "description": "The report lacks specific gastrointestinal symptoms (e.g., nausea, vomiting, abdominal pain, changes in bowel habits) despite multiple risk factors for GI complications.",
+                "related_specialist": null,
+                "impact": "medium"
+              },
+              {
+                "description": "No imaging or laboratory data (e.g., liver enzymes, lipid panel) are provided to assess for hepatobiliary conditions like NAFLD, which is highly probable given the patient's risk factors.",
+                "related_specialist": null,
+                "impact": "high"
+              }
+            ],
+            "recommendations": [
+              "Screening for Non-Alcoholic Fatty Liver Disease (NAFLD) with liver function tests and imaging (e.g., ultrasound) given obesity and type 2 diabetes.",
+              "Clinical assessment for symptoms of diabetic gastroparesis or other GI motility disorders, considering the confirmed peripheral neuropathy.",
+              "Counseling on smoking cessation and comprehensive lifestyle modifications for weight management and improved glycemic control.",
+              "Review of Metformin tolerability and potential for dose adjustment or alternative agents if GI side effects are present or develop."
+            ]
+          },
+          "Psychiatrist": {
+            "specialist": "Psychiatrist",
+            "primary_assessment": "The patient presents with chronic neuropathic pain and poorly controlled type 2 diabetes, compounded by unhealthy lifestyle behaviors. The report lacks any assessment of mood, anxiety, or cognitive function, which are crucial given the chronic nature of his conditions and their known psychiatric comorbidities.",
+            "overall_confidence": 60.0,
+            "key_findings": [
+              {
+                "summary": "Chronic neuropathic pain for 8 months presents a high risk for comorbid depression, anxiety, and sleep disturbance, which are currently unassessed.",
+                "quote": "burning sensation in feet, numbness, and occasional tingling for the past 8 months.",
+                "confidence": 85.0
+              },
+              {
+                "summary": "Poorly controlled diabetes and unhealthy lifestyle behaviors suggest potential underlying psychological barriers to adherence and self-management.",
+                "quote": "HbA1c: 8.7%. Smoker, overweight, sedentary.",
+                "confidence": 80.0
+              },
+              {
+                "summary": "The report lacks any assessment of the patient's mood, anxiety, or cognitive function, which is a critical omission given his chronic medical conditions and pain.",
+                "quote": "Medications: Metformin 1000 mg daily, Insulin (basal).",
+                "confidence": 90.0
+              }
+            ],
+            "contradictions": [
+              {
+                "description": "The report details significant chronic medical conditions (diabetes, neuropathy, hypertension, obesity) and chronic pain, all of which are known to have high rates of psychiatric comorbidity, yet there is no mention or assessment of the patient's mental health.",
+                "related_specialist": null,
+                "impact": "high"
+              }
+            ],
+            "recommendations": [
+              "Conduct a comprehensive psychiatric evaluation, including screening for depression, anxiety, and assessment of coping mechanisms related to chronic pain and diabetes.",
+              "Assess for cognitive function, particularly regarding medication adherence and self-management of diabetes.",
+              "Explore motivational factors and barriers to lifestyle modifications (smoking cessation, weight management, increased activity).",
+              "Consider psychopharmacological interventions if mood or anxiety disorders are identified, or for neuropathic pain management."
+            ]
+          }
+        },
+        "teamSummary": {
+          "overall_confidence": 85.0,
+          "diagnoses": [
+            {
+              "rank": 1,
+              "condition": "Poorly Controlled Type 2 Diabetes with Microvascular Complications",
+              "confidence": 95.0,
+              "primary_reason": "Elevated HbA1c (8.7%) indicates poor glycemic control, leading to confirmed diabetic peripheral neuropathy (chief complaint) and early renal impairment.",
+              "specialist_support": [
+                {
+                  "specialist": "Internist",
+                  "confidence": 95.0,
+                  "evidence": "Poorly controlled Type 2 diabetes, evidenced by elevated HbA1c, leading to systemic microvascular complications including confirmed peripheral neuropathy and early renal impairment."
+                },
+                {
+                  "specialist": "Neurologist",
+                  "confidence": 95.0,
+                  "evidence": "Symptomatic peripheral neuropathy, objectively confirmed by Nerve Conduction Studies, highly consistent with diabetic neuropathy given the history of poorly controlled Type 2 diabetes."
+                },
+                {
+                  "specialist": "Cardiologist",
+                  "confidence": 90.0,
+                  "evidence": "Poorly controlled type 2 diabetes... There is evidence of systemic microvascular complications, indicated by peripheral neuropathy and renal impairment."
+                },
+                {
+                  "specialist": "Gastroenterologist",
+                  "confidence": 85.0,
+                  "evidence": "Poorly controlled Type 2 Diabetes poses significant risk for various GI complications... Confirmed peripheral neuropathy suggests potential autonomic nervous system involvement."
+                }
+              ],
+              "contradictions": [
+                {
+                  "description": "Detailed neurological examination findings (sensory, motor, reflexes, cranial nerves) are missing, which are crucial for a comprehensive neurological assessment.",
+                  "specialist": "Neurologist",
+                  "impact": "high"
+                },
+                {
+                  "description": "Specific characteristics of the neuropathy from Nerve Conduction Studies (e.g., axonal vs. demyelinating, small vs. large fiber involvement, severity) are not provided.",
+                  "specialist": "Neurologist",
+                  "impact": "medium"
+                },
+                {
+                  "description": "Workup for other common causes of neuropathy (e.g., Vitamin B12 deficiency, thyroid dysfunction, autoimmune markers) is not documented.",
+                  "specialist": "Neurologist",
+                  "impact": "medium"
+                }
+              ],
+              "next_steps": [
+                "Intensify current diabetes management to achieve optimal glycemic control (HbA1c target <7%).",
+                "Further evaluate renal function and consider nephroprotective strategies (e.g., ACE inhibitors or ARBs).",
+                "Perform a comprehensive neurological examination and review full Nerve Conduction Study report.",
+                "Order laboratory tests to rule out other treatable causes of neuropathy (e.g., Vitamin B12, thyroid function tests, autoimmune panel).",
+                "Initiate symptomatic management for neuropathic pain."
+              ]
+            },
+            {
+              "rank": 2,
+              "condition": "Elevated Cardiovascular Risk Profile",
+              "confidence": 90.0,
+              "primary_reason": "Multiple unaddressed risk factors including hypertension (BP 142/88 mmHg), obesity (BMI 31.4), smoking, sedentary lifestyle, and chronic kidney disease, compounded by poorly controlled Type 2 diabetes.",
+              "specialist_support": [
+                {
+                  "specialist": "Cardiologist",
+                  "confidence": 90.0,
+                  "evidence": "The patient presents with a significantly elevated cardiovascular risk profile due to poorly controlled type 2 diabetes, hypertension, obesity, smoking, sedentary lifestyle, and chronic kidney disease."
+                },
+                {
+                  "specialist": "Internist",
+                  "confidence": 95.0,
+                  "evidence": "Multiple unaddressed cardiovascular risk factors, such as hypertension, obesity, and adverse lifestyle choices, further compound the systemic risk profile."
+                },
+                {
+                  "specialist": "Gastroenterologist",
+                  "confidence": 85.0,
+                  "evidence": "Obesity and unhealthy lifestyle factors increase GI and hepatobiliary risk."
+                }
+              ],
+              "contradictions": [
+                {
+                  "description": "No echocardiogram or other cardiac imaging provided to assess heart structure and function (e.g., left ventricular hypertrophy, ejection fraction).",
+                  "specialist": null,
+                  "impact": "high"
+                },
+                {
+                  "description": "An electrocardiogram (ECG) is not available to evaluate cardiac rhythm, conduction abnormalities, or signs of ischemia.",
+                  "specialist": null,
+                  "impact": "medium"
+                },
+                {
+                  "description": "No specific tests (e.g., stress test) have been performed to assess myocardial perfusion for coronary artery disease.",
+                  "specialist": null,
+                  "impact": "high"
+                }
+              ],
+              "next_steps": [
+                "Initiate aggressive management of hypertension and diabetes, aiming for guideline-recommended targets (e.g., BP <130/80 mmHg, HbA1c <7%).",
+                "Strongly recommend comprehensive lifestyle modifications, including smoking cessation, dietary changes, and a structured exercise program.",
+                "Perform a comprehensive cardiac workup, including an echocardiogram, 12-lead ECG, and consider a stress test for myocardial ischemia.",
+                "Consider initiation of statin therapy and aspirin (if not contraindicated) for primary cardiovascular prevention."
+              ]
+            },
+            {
+              "rank": 3,
+              "condition": "Unassessed Psychiatric Comorbidities and Psychological Barriers to Self-Management",
+              "confidence": 75.0,
+              "primary_reason": "Chronic neuropathic pain (8 months), poorly controlled diabetes, and unhealthy lifestyle behaviors present a high risk for psychiatric comorbidities and adherence issues, which are currently unassessed.",
+              "specialist_support": [
+                {
+                  "specialist": "Psychiatrist",
+                  "confidence": 60.0,
+                  "evidence": "The report lacks any assessment of mood, anxiety, or cognitive function, which are crucial given the chronic nature of his conditions and their known psychiatric comorbidities."
+                }
+              ],
+              "contradictions": [
+                {
+                  "description": "The report details significant chronic medical conditions (diabetes, neuropathy, hypertension, obesity) and chronic pain, all of which are known to have high rates of psychiatric comorbidity, yet there is no mention or assessment of the patient's mental health.",
+                  "specialist": null,
+                  "impact": "high"
+                }
+              ],
+              "next_steps": [
+                "Conduct a comprehensive psychiatric evaluation, including screening for depression, anxiety, and assessment of coping mechanisms related to chronic pain and diabetes.",
+                "Assess for cognitive function, particularly regarding medication adherence and self-management of diabetes.",
+                "Explore motivational factors and barriers to lifestyle modifications (smoking cessation, weight management, increased activity).",
+                "Consider psychopharmacological interventions if mood or anxiety disorders are identified, or for neuropathic pain management."
+              ]
+            }
+          ],
+          "consensus_highlights": [
+            "There is strong consensus across specialists that the patient has poorly controlled Type 2 Diabetes, which is the primary driver of his current symptoms and complications.",
+            "Diabetic peripheral neuropathy is confirmed and is the most probable cause of the patient's chief complaint of burning, numbness, and tingling in the feet.",
+            "The patient exhibits a significantly elevated cardiovascular risk profile due to multiple unmanaged factors (hypertension, obesity, smoking, sedentary lifestyle, chronic kidney disease).",
+            "Aggressive lifestyle modifications (smoking cessation, weight reduction, increased physical activity) are universally recommended as crucial for managing all identified conditions."
+          ],
+          "disagreement_notes": [
+            "Significant gaps exist in the comprehensive neurological assessment, specifically regarding detailed examination findings, specific characteristics of the neuropathy from NCS, and ruling out other causes of neuropathy.",
+            "A comprehensive cardiac workup (echocardiogram, ECG, stress test) is critically missing, preventing a full assessment of heart structure, function, and coronary artery disease.",
+            "There is a critical absence of any psychiatric assessment despite the patient's chronic pain, long-standing medical conditions, and unhealthy lifestyle behaviors, which are known to have high rates of psychiatric comorbidity."
+          ],
+          "specialist_confidence": {
+            "Internist": 95.0,
+            "Neurologist": 95.0,
+            "Cardiologist": 90.0,
+            "Gastroenterologist": 85.0,
+            "Psychiatrist": 60.0
+          }
+        },
+        "treatmentOptions": [
+          {
+            "option_number": 1,
+            "match_percentage": 95,
+            "primary_name": "Comprehensive Multidisciplinary Management for Diabetes, Cardiovascular Risk, and Neuropathy",
+            "overview": "This option provides an aggressive, integrated approach to simultaneously manage poorly controlled Type 2 Diabetes, mitigate high cardiovascular risk, alleviate neuropathic pain, and address underlying psychological barriers, supported by a complete diagnostic workup.",
+            "modality": "Multidisciplinary Medical, Lifestyle, Diagnostic, Psychological",
+            "success_rate": 80,
+            "duration": "Long-term, ongoing",
+            "recovery_time": "N/A (chronic disease management)",
+            "cost_estimate": "High (multiple specialist visits, medications, diagnostics, potential therapy)",
+            "side_effects": [
+              "Hypoglycemia (with intensified diabetes regimen)",
+              "Medication side effects (e.g., GI with new diabetes/BP meds)",
+              "Challenges with lifestyle changes",
+              "Psychological distress during assessment/therapy"
+            ],
+            "recommended_for": [
+              "Patients with complex, multi-system chronic conditions requiring comprehensive, coordinated care.",
+              "Individuals willing to engage in significant lifestyle changes and multidisciplinary follow-up.",
+              "Patients seeking the most thorough and proactive management strategy."
+            ],
+            "procedure_steps": [
+              "Intensify diabetes regimen (e.g., add GLP-1 RA/SGLT2i or optimize insulin) to achieve HbA1c <7%.",
+              "Initiate/optimize antihypertensive therapy (e.g., ACEi/ARB) to target BP <130/80 mmHg, with nephroprotective benefits.",
+              "Initiate statin therapy and consider low-dose aspirin for primary CV prevention.",
+              "Referral to a registered dietitian and exercise physiologist for structured lifestyle modification (smoking cessation, weight loss, physical activity).",
+              "Complete comprehensive neurological examination, review full NCS report, and rule out other neuropathy causes (B12, thyroid, autoimmune panel).",
+              "Initiate symptomatic management for neuropathic pain (e.g., gabapentin, pregabalin, duloxetine).",
+              "Perform comprehensive cardiac workup: Echocardiogram, 12-lead ECG, and consider a stress test for myocardial ischemia.",
+              "Conduct a comprehensive psychiatric evaluation, including screening for depression, anxiety, cognitive function, and motivational barriers.",
+              "Screen for Non-Alcoholic Fatty Liver Disease (NAFLD) with LFTs and imaging (e.g., ultrasound)."
+            ],
+            "notes": [
+              "Requires significant patient commitment and close follow-up across multiple specialties.",
+              "Early engagement with mental health support is crucial for long-term adherence and overall well-being.",
+              "This option addresses all identified diagnostic gaps and risk factors concurrently."
+            ]
+          },
+          {
+            "option_number": 2,
+            "match_percentage": 85,
+            "primary_name": "Targeted Glycemic & Neuropathy Management with Essential Cardiovascular Risk Reduction",
+            "overview": "This option focuses on immediate and effective control of diabetes and neuropathic symptoms, alongside crucial cardiovascular risk factor management and completion of essential diagnostic evaluations.",
+            "modality": "Medical, Lifestyle, Diagnostic",
+            "success_rate": 70,
+            "duration": "Long-term, ongoing",
+            "recovery_time": "N/A (chronic disease management)",
+            "cost_estimate": "Medium (medications, specialist visits, some diagnostics)",
+            "side_effects": [
+              "Hypoglycemia (with intensified diabetes regimen)",
+              "Medication side effects",
+              "Challenges with lifestyle changes"
+            ],
+            "recommended_for": [
+              "Patients who need immediate focus on diabetes and neuropathy control.",
+              "Individuals ready for significant lifestyle changes and structured medical management.",
+              "Patients seeking a balanced approach that prioritizes key health concerns."
+            ],
+            "procedure_steps": [
+              "Intensify diabetes management (e.g., add GLP-1 RA or SGLT2i) to achieve HbA1c <7%.",
+              "Initiate/optimize antihypertensive therapy to target BP <130/80 mmHg.",
+              "Strongly recommend comprehensive lifestyle modifications: smoking cessation, dietary changes, and increased physical activity.",
+              "Initiate symptomatic management for neuropathic pain.",
+              "Complete comprehensive neurological examination and review full NCS report.",
+              "Order laboratory tests to rule out other treatable causes of neuropathy (e.g., Vitamin B12, thyroid function tests).",
+              "Perform a 12-lead ECG and Echocardiogram.",
+              "Consider initiation of statin therapy.",
+              "Referral for initial psychiatric screening for mood and anxiety disorders."
+            ],
+            "notes": [
+              "This approach prioritizes the most impactful interventions for the patient's primary complaints and major risk factors.",
+              "Some less urgent diagnostic workups or specialized psychological interventions may be deferred compared to Option 1.",
+              "Requires consistent follow-up with primary care and relevant specialists."
+            ]
+          },
+          {
+            "option_number": 3,
+            "match_percentage": 75,
+            "primary_name": "Foundational Lifestyle & Diagnostic Pathway for Chronic Disease Management",
+            "overview": "This option emphasizes aggressive lifestyle modifications as the primary intervention for diabetes, cardiovascular risk, and obesity, combined with a thorough diagnostic workup to establish a complete clinical picture before escalating medical therapies.",
+            "modality": "Lifestyle, Diagnostic, Medical (supportive)",
+            "success_rate": 60,
+            "duration": "Medium-term (initial phase, then ongoing)",
+            "recovery_time": "N/A (chronic disease management)",
+            "cost_estimate": "Low-Medium (lifestyle programs, initial diagnostics, fewer new medications)",
+            "side_effects": [
+              "Challenges with behavior change and adherence",
+              "Potential for slower improvement in glycemic/BP targets if lifestyle alone is insufficient",
+              "Psychological distress during assessment"
+            ],
+            "recommended_for": [
+              "Patients highly motivated for lifestyle changes and who prefer a diagnostic-first approach.",
+              "Individuals who may be hesitant about immediate aggressive medication escalation.",
+              "Patients requiring a comprehensive understanding of their conditions before extensive treatment."
+            ],
+            "procedure_steps": [
+              "Intensive counseling and support for smoking cessation, dietary changes (e.g., low-carb, Mediterranean), and a structured exercise program.",
+              "Review and optimize current diabetes and hypertension medications, emphasizing lifestyle impact on efficacy.",
+              "Complete comprehensive neurological examination and review full NCS report.",
+              "Order laboratory tests to rule out other treatable causes of neuropathy (e.g., Vitamin B12, thyroid function tests, autoimmune panel).",
+              "Perform comprehensive cardiac workup: Echocardiogram, 12-lead ECG, and consider a stress test for myocardial ischemia.",
+              "Initiate symptomatic management for neuropathic pain, prioritizing non-pharmacological approaches initially.",
+              "Conduct a comprehensive psychiatric evaluation to identify and address psychological barriers to lifestyle changes and chronic pain management.",
+              "Screen for Non-Alcoholic Fatty Liver Disease (NAFLD) with LFTs and imaging."
+            ],
+            "notes": [
+              "While lifestyle is crucial, relying solely on it may delay achieving optimal glycemic and BP targets, especially given the patient's current poor control and complications.",
+              "Close monitoring is essential to ensure clinical stability while lifestyle changes take effect.",
+              "This option provides a strong foundation for future medical interventions once diagnostic clarity is achieved."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "bd93ee4c-b814-4563-9c7f-c4efb971181b",
+      "patientId": "100232",
+      "name": "Anna Thompson",
+      "age": 35,
+      "gender": "Female",
+      "chiefComplaint": "The patient presents with abdominal bloating, irregular bowel movements, and cramping\nabdominal pain for the past six months.",
+      "familyHistory": "No significant gastrointestinal disease.",
+      "personalHistory": "Seasonal allergies.",
+      "lifestyle": "Balanced diet, occasional alcohol, no smoking.",
+      "medications": "Antihistamines as needed.",
+      "colonoscopy": "No structural abnormalities.",
+      "stoolStudies": "Negative for pathogens.",
+      "bloodTests": "Blood Tests: Normal CBC, normal CRP.",
+      "vitals": "BP 118/76 mmHg, HR 74 bpm, BMI 22.0.",
+      "abdominalExam": "Mild tenderness in left lower quadrant, no rebound.",
+      "status": "Completed",
+      "createdAt": "2025-11-14T19:51:39.973759",
+      "updatedAt": "2025-11-14T19:53:00.654415",
+      "agentResults": {
+        "specialists": {
+          "Internist": {
+            "specialist": "Internist",
+            "primary_assessment": "The patient presents with chronic functional gastrointestinal symptoms, with extensive organic pathology ruled out, and overall systemic health appears stable.",
+            "overall_confidence": 85.0,
+            "key_findings": [
+              {
+                "summary": "Extensive diagnostic workup has effectively excluded common organic gastrointestinal diseases.",
+                "quote": "No structural abnormalities. Negative for pathogens.",
+                "confidence": 95.0
+              },
+              {
+                "summary": "Patient experiences chronic abdominal symptoms consistent with a functional gastrointestinal disorder.",
+                "quote": "abdominal bloating, irregular bowel movements, and cramping abdominal pain for the past six months.",
+                "confidence": 90.0
+              },
+              {
+                "summary": "Systemic inflammatory markers and vital signs are within normal limits, indicating no acute or chronic systemic illness.",
+                "quote": "Normal CBC, normal CRP.",
+                "confidence": 90.0
+              },
+              {
+                "summary": "History includes seasonal allergies and as-needed antihistamine use, suggesting a potential atopic predisposition.",
+                "quote": "Seasonal allergies. Antihistamines as needed.",
+                "confidence": 75.0
+              }
+            ],
+            "contradictions": [
+              {
+                "description": "Despite chronic and bothersome gastrointestinal symptoms, the report lacks assessment for common systemic triggers like food intolerances or psychosocial factors.",
+                "related_specialist": "Gastroenterologist",
+                "impact": "medium"
+              }
+            ],
+            "recommendations": [
+              "Initiate a detailed dietary history and consider a trial of an elimination diet to identify potential food sensitivities.",
+              "Screen for psychosocial stressors, anxiety, or depression, given the strong gut-brain axis connection in functional disorders.",
+              "Review the frequency and type of antihistamine use for any potential subtle systemic effects on gut motility.",
+              "Consider a diagnosis of Irritable Bowel Syndrome (IBS) and discuss systemic management strategies."
+            ]
+          },
+          "Neurologist": {
+            "specialist": "Neurologist",
+            "primary_assessment": "The patient's report provides no direct neurological symptoms or findings, making a comprehensive neurological assessment impossible. The primary complaint is gastrointestinal, and without further neurological history or examination, a neurological etiology for the reported symptoms is not supported by the current data.",
+            "overall_confidence": 35.0,
+            "key_findings": [
+              {
+                "summary": "No direct neurological symptoms are reported in the chief complaint.",
+                "quote": "abdominal bloating, irregular bowel movements, and cramping abdominal pain for the past six months.",
+                "confidence": 100.0
+              },
+              {
+                "summary": "The provided examination details do not include any neurological assessment.",
+                "quote": "Abdominal Exam: Mild tenderness in left lower quadrant, no rebound.",
+                "confidence": 95.0
+              },
+              {
+                "summary": "Vital signs are normal, with no indication of autonomic instability.",
+                "quote": "BP 118/76 mmHg, HR 74 bpm, BMI 22.0.",
+                "confidence": 95.0
+              },
+              {
+                "summary": "Routine blood tests are normal, but specific neurological markers are absent.",
+                "quote": "Blood Tests: Normal CBC, normal CRP.",
+                "confidence": 90.0
+              }
+            ],
+            "contradictions": [
+              {
+                "description": "The report lacks any specific neurological history or examination findings, which are crucial for a neurological assessment.",
+                "related_specialist": "Neurologist",
+                "impact": "high"
+              }
+            ],
+            "recommendations": [
+              "Conduct a comprehensive neurological history, including sensory, motor, and autonomic symptoms.",
+              "Perform a detailed neurological examination, assessing cranial nerves, motor, sensory, reflexes, and gait.",
+              "Consider specific laboratory investigations for neuropathy (e.g., B12, glucose, thyroid panel) if indicated by history or exam.",
+              "Evaluate for autonomic dysfunction, especially if gastrointestinal symptoms persist without other identified causes."
+            ]
+          },
+          "Cardiologist": {
+            "specialist": "Cardiologist",
+            "primary_assessment": "Overall, Anna Thompson, a 35-year-old female, presents with a favorable cardiovascular profile based on available data. She exhibits normal blood pressure, heart rate, BMI, and an absence of systemic inflammation. However, a comprehensive cardiovascular risk assessment is limited by missing key information regarding family history of cardiovascular disease, lipid profile, and glucose levels.",
+            "overall_confidence": 85.0,
+            "key_findings": [
+              {
+                "summary": "The patient demonstrates normal hemodynamic parameters, with blood pressure and heart rate well within healthy ranges, indicating good systemic perfusion.",
+                "quote": "BP 118/76 mmHg, HR 74 bpm",
+                "confidence": 100.0
+              },
+              {
+                "summary": "Anna maintains a favorable lifestyle and anthropometric profile, which significantly contributes to a lower cardiovascular risk.",
+                "quote": "BMI 22.0... Balanced diet, occasional alcohol, no smoking.",
+                "confidence": 95.0
+              },
+              {
+                "summary": "Blood tests indicate an absence of significant systemic inflammation, further supporting a positive cardiovascular outlook.",
+                "quote": "Blood Tests: Normal CBC, normal CRP.",
+                "confidence": 95.0
+              }
+            ],
+            "contradictions": [
+              {
+                "description": "The family history section only addresses gastrointestinal disease, omitting crucial information regarding cardiovascular disease, which is vital for a complete risk assessment.",
+                "related_specialist": null,
+                "impact": "medium"
+              },
+              {
+                "description": "A lipid profile (cholesterol, triglycerides) and fasting glucose levels are not provided, limiting the ability to perform a comprehensive cardiovascular risk stratification.",
+                "related_specialist": null,
+                "impact": "medium"
+              },
+              {
+                "description": "No direct cardiac imaging (e.g., echocardiogram) or electrocardiogram (ECG) results are available to assess heart structure or electrical activity.",
+                "related_specialist": null,
+                "impact": "low"
+              }
+            ],
+            "recommendations": [
+              "Obtain a detailed family history focusing on cardiovascular diseases (e.g., early heart attack, stroke, sudden cardiac death).",
+              "Recommend a baseline lipid panel and fasting glucose to complete the cardiovascular risk assessment.",
+              "Encourage continuation of current healthy lifestyle choices, including a balanced diet and no smoking.",
+              "Consider a baseline electrocardiogram (ECG) as part of a routine health check, especially if any cardiac symptoms develop."
+            ]
+          },
+          "Gastroenterologist": {
+            "specialist": "Gastroenterologist",
+            "primary_assessment": "The patient presents with chronic abdominal symptoms including bloating, irregular bowel movements, and cramping pain, with a thorough initial workup revealing no structural abnormalities, infection, or significant inflammation.",
+            "overall_confidence": 85.0,
+            "key_findings": [
+              {
+                "summary": "Chronic abdominal symptoms including bloating, irregular bowel movements, and cramping pain have been present for six months.",
+                "quote": "abdominal bloating, irregular bowel movements, and cramping abdominal pain for the past six months.",
+                "confidence": 100.0
+              },
+              {
+                "summary": "Colonoscopy revealed no structural abnormalities in the colon.",
+                "quote": "Colonoscopy revealed no structural abnormalities.",
+                "confidence": 100.0
+              },
+              {
+                "summary": "Laboratory tests indicate no evidence of infection or significant inflammation.",
+                "quote": "Stool Studies: Negative for pathogens. Blood Tests: Normal CBC, normal CRP.",
+                "confidence": 95.0
+              },
+              {
+                "summary": "Physical examination showed mild tenderness in the left lower quadrant without rebound.",
+                "quote": "Mild tenderness in left lower quadrant, no rebound.",
+                "confidence": 90.0
+              }
+            ],
+            "contradictions": [
+              {
+                "description": "The description of 'irregular bowel movements' lacks specificity regarding frequency, consistency (e.g., Bristol stool scale), and predominant pattern (constipation, diarrhea, or alternating).",
+                "related_specialist": null,
+                "impact": "high"
+              },
+              {
+                "description": "Detailed dietary history, including potential triggers or fiber intake, and assessment of psychosocial factors (e.g., stress) are not documented.",
+                "related_specialist": null,
+                "impact": "medium"
+              }
+            ],
+            "recommendations": [
+              "Obtain a more detailed history of bowel habits, including frequency, consistency, urgency, and any precipitating or alleviating factors.",
+              "Conduct a comprehensive dietary assessment, including potential food triggers (e.g., FODMAPs) and fiber intake.",
+              "Assess for psychosocial factors such as stress, anxiety, or depression, which commonly influence functional gastrointestinal symptoms.",
+              "Consider a diagnosis of Irritable Bowel Syndrome (IBS) given the chronic symptoms, normal colonoscopy, and negative inflammatory markers.",
+              "Initiate symptomatic management strategies, which may include dietary modifications, fiber supplementation, and antispasmodics as appropriate."
+            ]
+          },
+          "Psychiatrist": {
+            "specialist": "Psychiatrist",
+            "primary_assessment": "The patient presents with chronic, medically unexplained gastrointestinal symptoms over six months. Extensive medical workup has been negative for organic pathology. This presentation strongly suggests a potential functional somatic syndrome, such as Irritable Bowel Syndrome (IBS), which often has significant psychiatric comorbidity. The current report lacks any information regarding the patient's psychological state, mood, anxiety, or stress levels, which are crucial for a comprehensive psychiatric evaluation.",
+            "overall_confidence": 75.0,
+            "key_findings": [
+              {
+                "summary": "Chronic gastrointestinal symptoms persist for six months without clear organic etiology, suggesting a potential functional somatic syndrome.",
+                "quote": "abdominal bloating, irregular bowel movements, and cramping abdominal pain for the past six months.",
+                "confidence": 85.0
+              },
+              {
+                "summary": "Extensive medical investigations have yielded no significant structural or pathological findings to explain the patient's chronic GI complaints.",
+                "quote": "Colonoscopy: No structural abnormalities. Stool Studies: Negative for pathogens. Normal CBC, normal CRP.",
+                "confidence": 90.0
+              },
+              {
+                "summary": "The report lacks any information regarding the patient's mood, anxiety, stress levels, or psychological state, and no psychotropic medications are noted.",
+                "quote": "Medications: Antihistamines as needed.",
+                "confidence": 95.0
+              },
+              {
+                "summary": "The patient's healthy lifestyle and normal vital signs do not point to obvious physical contributors, emphasizing the need to explore psychological factors.",
+                "quote": "Balanced diet, occasional alcohol, no smoking. Vitals normal.",
+                "confidence": 70.0
+              }
+            ],
+            "contradictions": [
+              {
+                "description": "The comprehensive medical workup for chronic GI symptoms is presented without any assessment of the patient's psychological state, mood, or anxiety, creating a significant diagnostic gap.",
+                "related_specialist": null,
+                "impact": "high"
+              }
+            ],
+            "recommendations": [
+              "Conduct a comprehensive psychiatric evaluation, including assessment for mood disorders (e.g., depression), anxiety disorders (e.g., generalized anxiety, health anxiety), somatization, and stress-related disorders.",
+              "Explore the temporal relationship between symptom onset and any significant life stressors or psychological events.",
+              "Assess the patient's coping mechanisms, illness beliefs, and functional impairment related to her GI symptoms.",
+              "Consider screening for functional gastrointestinal disorders (FGIDs) like Irritable Bowel Syndrome (IBS), which often have significant psychiatric comorbidity."
+            ]
+          }
+        },
+        "teamSummary": {
+          "overall_confidence": 82.0,
+          "diagnoses": [
+            {
+              "rank": 1,
+              "condition": "Irritable Bowel Syndrome (IBS)",
+              "confidence": 90.0,
+              "primary_reason": "The patient presents with chronic abdominal bloating, irregular bowel movements, and cramping pain for six months, with extensive diagnostic workup (colonoscopy, stool studies, CBC, CRP) effectively ruling out organic pathology, infection, and significant inflammation. This clinical picture strongly aligns with the diagnostic criteria for Irritable Bowel Syndrome.",
+              "specialist_support": [
+                {
+                  "specialist": "Gastroenterologist",
+                  "confidence": 85.0,
+                  "evidence": "Consider a diagnosis of Irritable Bowel Syndrome (IBS) given the chronic symptoms, normal colonoscopy, and negative inflammatory markers."
+                },
+                {
+                  "specialist": "Internist",
+                  "confidence": 85.0,
+                  "evidence": "Consider a diagnosis of Irritable Bowel Syndrome (IBS) and discuss systemic management strategies."
+                },
+                {
+                  "specialist": "Psychiatrist",
+                  "confidence": 75.0,
+                  "evidence": "This presentation strongly suggests a potential functional somatic syndrome, such as Irritable Bowel Syndrome (IBS), which often has significant psychiatric comorbidity."
+                }
+              ],
+              "contradictions": [
+                {
+                  "description": "The description of 'irregular bowel movements' lacks specificity regarding frequency, consistency (e.g., Bristol stool scale), and predominant pattern (constipation, diarrhea, or alternating), which is crucial for IBS subtyping.",
+                  "specialist": "Gastroenterologist",
+                  "impact": "high"
+                },
+                {
+                  "description": "Despite chronic and bothersome gastrointestinal symptoms, the report lacks assessment for common systemic triggers like food intolerances or psychosocial factors.",
+                  "specialist": "Internist",
+                  "impact": "medium"
+                }
+              ],
+              "next_steps": [
+                "Obtain a more detailed history of bowel habits, including frequency, consistency, urgency, and any precipitating or alleviating factors.",
+                "Conduct a comprehensive dietary assessment, including potential food triggers (e.g., FODMAPs) and fiber intake.",
+                "Assess for psychosocial factors such as stress, anxiety, or depression, which commonly influence functional gastrointestinal symptoms.",
+                "Initiate symptomatic management strategies, which may include dietary modifications, fiber supplementation, and antispasmodics as appropriate."
+              ]
+            },
+            {
+              "rank": 2,
+              "condition": "Functional Gastrointestinal Disorder (FGID) - Unspecified",
+              "confidence": 85.0,
+              "primary_reason": "The patient's chronic abdominal symptoms (bloating, irregular bowel movements, cramping pain) persist for six months despite extensive medical investigations yielding no significant structural, infectious, or inflammatory findings. This strongly points to a functional origin, making an unspecified FGID a highly probable diagnosis until more specific criteria for IBS or other FGIDs are fully met.",
+              "specialist_support": [
+                {
+                  "specialist": "Internist",
+                  "confidence": 85.0,
+                  "evidence": "The patient presents with chronic functional gastrointestinal symptoms, with extensive organic pathology ruled out, and overall systemic health appears stable."
+                },
+                {
+                  "specialist": "Gastroenterologist",
+                  "confidence": 85.0,
+                  "evidence": "The patient presents with chronic abdominal symptoms... with a thorough initial workup revealing no structural abnormalities, infection, or significant inflammation."
+                },
+                {
+                  "specialist": "Psychiatrist",
+                  "confidence": 75.0,
+                  "evidence": "Chronic, medically unexplained gastrointestinal symptoms over six months... strongly suggests a potential functional somatic syndrome..."
+                }
+              ],
+              "contradictions": [
+                {
+                  "description": "Detailed dietary history, including potential triggers or fiber intake, and assessment of psychosocial factors (e.g., stress) are not documented, which are crucial for understanding and managing FGIDs.",
+                  "specialist": "Gastroenterologist",
+                  "impact": "medium"
+                },
+                {
+                  "description": "Despite chronic and bothersome gastrointestinal symptoms, the report lacks assessment for common systemic triggers like food intolerances or psychosocial factors.",
+                  "specialist": "Internist",
+                  "impact": "medium"
+                }
+              ],
+              "next_steps": [
+                "Initiate a detailed dietary history and consider a trial of an elimination diet to identify potential food sensitivities.",
+                "Screen for psychosocial stressors, anxiety, or depression, given the strong gut-brain axis connection in functional disorders.",
+                "Review the frequency and type of antihistamine use for any potential subtle systemic effects on gut motility.",
+                "Implement a holistic management plan addressing diet, lifestyle, and stress."
+              ]
+            },
+            {
+              "rank": 3,
+              "condition": "Anxiety/Depression with Somatic Symptoms",
+              "confidence": 70.0,
+              "primary_reason": "The patient's chronic, medically unexplained gastrointestinal symptoms, in the absence of organic pathology, strongly suggest a potential functional somatic syndrome. Such conditions frequently have significant psychiatric comorbidity, and the current report lacks any assessment of the patient's psychological state, mood, anxiety, or stress levels, representing a critical diagnostic gap.",
+              "specialist_support": [
+                {
+                  "specialist": "Psychiatrist",
+                  "confidence": 75.0,
+                  "evidence": "The patient presents with chronic, medically unexplained gastrointestinal symptoms... This presentation strongly suggests a potential functional somatic syndrome, such as Irritable Bowel Syndrome (IBS), which often has significant psychiatric comorbidity."
+                },
+                {
+                  "specialist": "Internist",
+                  "confidence": 85.0,
+                  "evidence": "Screen for psychosocial stressors, anxiety, or depression, given the strong gut-brain axis connection in functional disorders."
+                },
+                {
+                  "specialist": "Gastroenterologist",
+                  "confidence": 85.0,
+                  "evidence": "Assess for psychosocial factors such as stress, anxiety, or depression, which commonly influence functional gastrointestinal symptoms."
+                }
+              ],
+              "contradictions": [
+                {
+                  "description": "The comprehensive medical workup for chronic GI symptoms is presented without any assessment of the patient's psychological state, mood, or anxiety, creating a significant diagnostic gap.",
+                  "specialist": "Psychiatrist",
+                  "impact": "high"
+                }
+              ],
+              "next_steps": [
+                "Conduct a comprehensive psychiatric evaluation, including assessment for mood disorders (e.g., depression), anxiety disorders (e.g., generalized anxiety, health anxiety), somatization, and stress-related disorders.",
+                "Explore the temporal relationship between symptom onset and any significant life stressors or psychological events.",
+                "Assess the patient's coping mechanisms, illness beliefs, and functional impairment related to her GI symptoms.",
+                "Consider psychological interventions (e.g., Cognitive Behavioral Therapy, gut-directed hypnotherapy) if indicated."
+              ]
+            }
+          ],
+          "consensus_highlights": [
+            "Extensive diagnostic workup has effectively excluded common organic gastrointestinal diseases, infections, and significant inflammation.",
+            "The patient's chronic abdominal symptoms are highly consistent with a functional gastrointestinal disorder.",
+            "Irritable Bowel Syndrome (IBS) is a strong diagnostic consideration by multiple specialists.",
+            "There is a critical need for detailed dietary history, assessment of psychosocial factors (stress, anxiety, depression), and a comprehensive psychiatric evaluation.",
+            "The patient's overall systemic health (cardiovascular, neurological) appears stable based on available, albeit limited, data."
+          ],
+          "disagreement_notes": [
+            "The Neurologist's assessment is severely limited by the absence of any neurological history or examination findings, preventing a meaningful contribution to the primary complaint.",
+            "The Cardiologist's assessment is limited by missing key cardiovascular risk factors (family history, lipid profile, glucose levels) and direct cardiac imaging/ECG.",
+            "There is a significant gap in the specificity of reported bowel movements, which is crucial for subtyping functional GI disorders.",
+            "The lack of a comprehensive psychological assessment represents a major diagnostic gap, despite the strong suspicion of psychiatric comorbidity in functional GI disorders."
+          ],
+          "specialist_confidence": {
+            "Internist": 85.0,
+            "Neurologist": 35.0,
+            "Cardiologist": 85.0,
+            "Gastroenterologist": 85.0,
+            "Psychiatrist": 75.0
+          }
+        },
+        "treatmentOptions": [
+          {
+            "option_number": 1,
+            "match_percentage": 90,
+            "primary_name": "Integrated Dietary & Lifestyle Management with Symptomatic Relief",
+            "overview": "This option focuses on initial, non-pharmacological and symptomatic pharmacological interventions to manage Irritable Bowel Syndrome (IBS) or Functional Gastrointestinal Disorder (FGID) symptoms. It emphasizes dietary modifications, fiber supplementation, and as-needed medications for symptom control, while also initiating assessment for systemic triggers and psychosocial factors.",
+            "modality": "Lifestyle, Dietary, Pharmacological (symptomatic)",
+            "success_rate": 70,
+            "duration": "Ongoing",
+            "recovery_time": "Weeks to months for initial symptom improvement",
+            "cost_estimate": "Low to Medium (dietary changes, OTC medications, potential nutritionist fees)",
+            "side_effects": [
+              "Potential for dietary restrictions to impact nutrient intake (if not managed well)",
+              "Mild side effects from antispasmodics (e.g., dry mouth, constipation)",
+              "Increased gas/bloating with fiber supplementation initially"
+            ],
+            "recommended_for": [
+              "Patients with confirmed or highly suspected Irritable Bowel Syndrome (IBS) or Functional Gastrointestinal Disorder (FGID)",
+              "Individuals willing to make significant dietary and lifestyle changes",
+              "Patients seeking initial symptom control without immediate advanced pharmacotherapy"
+            ],
+            "procedure_steps": [
+              "Conduct a detailed dietary history, including potential food triggers (e.g., FODMAPs) and fiber intake.",
+              "Consider a trial of a low-FODMAP diet under guidance, followed by reintroduction.",
+              "Initiate fiber supplementation (e.g., psyllium) to regulate bowel movements.",
+              "Prescribe antispasmodics (e.g., dicyclomine, hyoscyamine) for cramping pain as needed.",
+              "Encourage regular physical activity and stress reduction techniques (e.g., mindfulness, yoga).",
+              "Screen for psychosocial stressors, anxiety, or depression."
+            ],
+            "notes": [
+              "Individualized dietary approach is crucial; a registered dietitian can be beneficial.",
+              "Symptom diary can help identify triggers and track response to interventions.",
+              "Close monitoring for symptom improvement and adjustment of strategies is essential."
+            ]
+          },
+          {
+            "option_number": 2,
+            "match_percentage": 85,
+            "primary_name": "Psychological Evaluation & Gut-Brain Axis Therapy",
+            "overview": "Given the strong suspicion of psychiatric comorbidity and the gut-brain axis connection in functional gastrointestinal disorders, this option prioritizes a comprehensive psychiatric evaluation and the initiation of mind-body therapies. It aims to address underlying psychological factors that may exacerbate or contribute to GI symptoms.",
+            "modality": "Psychological, Behavioral",
+            "success_rate": 65,
+            "duration": "Weeks to months (course of therapy)",
+            "recovery_time": "Ongoing process, symptom improvement over weeks to months",
+            "cost_estimate": "Medium to High (therapy sessions, potential psychiatric medication)",
+            "side_effects": [
+              "Emotional discomfort during therapy sessions",
+              "Potential side effects from psychotropic medications if prescribed (e.g., nausea, fatigue, weight changes)"
+            ],
+            "recommended_for": [
+              "Patients with chronic, medically unexplained GI symptoms (IBS/FGID)",
+              "Individuals with suspected or diagnosed anxiety, depression, or high stress levels",
+              "Patients whose symptoms are significantly impacted by psychological factors"
+            ],
+            "procedure_steps": [
+              "Conduct a comprehensive psychiatric evaluation to assess for mood disorders, anxiety disorders, somatization, and stress-related disorders.",
+              "Explore the temporal relationship between symptom onset and any significant life stressors or psychological events.",
+              "Initiate Cognitive Behavioral Therapy (CBT) or gut-directed hypnotherapy.",
+              "Consider pharmacotherapy for anxiety or depression (e.g., low-dose tricyclic antidepressants or SSRIs) if indicated, which can also modulate gut function.",
+              "Assess the patient's coping mechanisms and illness beliefs."
+            ],
+            "notes": [
+              "Collaboration between gastroenterology and psychiatry is highly recommended for optimal outcomes.",
+              "Patient education on the gut-brain axis is important to foster engagement in therapy.",
+              "Therapy may be delivered individually or in group settings."
+            ]
+          },
+          {
+            "option_number": 3,
+            "match_percentage": 75,
+            "primary_name": "Advanced GI Symptom Management & Diagnostic Refinement",
+            "overview": "This option focuses on further refining the diagnosis of IBS subtype and implementing targeted pharmacotherapy for persistent or severe symptoms that have not adequately responded to initial dietary and lifestyle interventions. It also includes a review of current medications for potential subtle effects.",
+            "modality": "Diagnostic, Pharmacological",
+            "success_rate": 60,
+            "duration": "Short-term for diagnostics, ongoing for medication",
+            "recovery_time": "Weeks for medication efficacy to be assessed",
+            "cost_estimate": "Medium (specialized tests, prescription medications)",
+            "side_effects": [
+              "Medication-specific side effects (e.g., diarrhea, constipation, nausea, abdominal pain)",
+              "Potential for drug interactions"
+            ],
+            "recommended_for": [
+              "Patients with persistent or severe IBS/FGID symptoms despite initial dietary and lifestyle management",
+              "Individuals requiring more specific classification of their bowel habits (IBS-C, IBS-D, IBS-M)",
+              "Patients who may benefit from targeted prescription medications"
+            ],
+            "procedure_steps": [
+              "Obtain a more detailed history of bowel habits, including frequency, consistency (using Bristol Stool Scale), urgency, and any precipitating or alleviating factors to subtype IBS.",
+              "Review the frequency and type of antihistamine use for any potential subtle systemic effects on gut motility.",
+              "Consider specific pharmacotherapy based on IBS subtype: e.g., rifaximin for IBS-D, linaclotide or lubiprostone for IBS-C, or alosetron (with strict criteria) for severe IBS-D in women.",
+              "Evaluate for small intestinal bacterial overgrowth (SIBO) if symptoms are predominantly bloating and gas, and consider breath testing.",
+              "Re-evaluate for other less common organic causes if symptoms change or new alarm features develop."
+            ],
+            "notes": [
+              "Pharmacological treatments should be chosen based on the predominant symptom and IBS subtype.",
+              "Close monitoring for medication efficacy and side effects is crucial.",
+              "Patient education on medication use and potential side effects is vital."
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "total": 5
+}
